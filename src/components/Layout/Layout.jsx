@@ -11,14 +11,10 @@ export default function Layout(props) {
         <Nav />
       </header>
       <aside>
-        <CategoryList/>
+        <CategoryList />
       </aside>
-      <main>
-        {props.children}
-      </main>
-      <footer>
-        FOOTER
-      </footer>
+      <main>{props.children}</main>
+      <footer>FOOTER</footer>
     </div>
   );
 }
