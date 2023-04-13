@@ -13,7 +13,7 @@ const firebaseConfig = {
   storageBucket: "diploma-5fd9c.appspot.com",
   messagingSenderId: "365501856568",
   appId: "1:365501856568:web:0bb46803a2d95967d19fcd",
-  measurementId: "G-260W9F9F1G",
+  measurementId: "G-260W9F9F1G"
 };
 
 // Initialize Firebase
