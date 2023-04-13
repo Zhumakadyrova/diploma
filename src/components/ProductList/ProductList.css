@@ -1,0 +1,10 @@
+.ProductList .Product {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.ProductList .Product img {
+  width: 100%;
+  box-shadow: 6px 5px 6px white;
+  border-radius: 25px;
+}
