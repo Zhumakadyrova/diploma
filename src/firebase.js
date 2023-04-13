@@ -21,3 +21,4 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 //получить списк категорий (коллекция документов).
 export const categoryCollection = collection(db, "categories");
+export const productCollection = collection(db, "products");
