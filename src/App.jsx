@@ -9,7 +9,7 @@ import Delivery from "./pages/Delivery";
 import Home from "./pages/Home";
 
 export const AppContext = createContext ( {
-  
+  categories: [],
 });
 
 export default function App() {
@@ -34,6 +34,7 @@ export default function App() {
         setCategories(newCategories);
       });
     }, []);
+    
   return (
     <div className="App">
       <AppContext.Provider value={{categories}}>
