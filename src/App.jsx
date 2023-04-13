@@ -2,7 +2,7 @@ import { getDocs } from "firebase/firestore";
 import { createContext, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import { categoryCollection } from "./firebase";
+import { categoryCollection, productCollection } from "./firebase";
 import About from "./pages/About";
 import Category from "./pages/Category";
 import Delivery from "./pages/Delivery";
@@ -10,10 +10,12 @@ import Home from "./pages/Home";
 
 export const AppContext = createContext ( {
   categories: [],
+  products: [],
 });
 
 export default function App() {
-  const [categories, setCategories]= useState([])
+  const [categories, setCategories]= useState([]);
+  const [products, setProducts] = useState([]);
     //выполнить эту функцию только один раз
     useEffect(() => {
       //получить категории из списка категорий
@@ -33,11 +35,29 @@ export default function App() {
         //задать новый массив как состояние компонент
         setCategories(newCategories);
       });
+
+           //получить категории из списка категорий
+           getDocs(productCollection).then((snapshot) => {
+            //категории будут храниться в snapshot.докс
+      
+            //создать массив для категорий
+            const newProducts = [];
+      
+            snapshot.docs.forEach((doc) => {
+              // doc = категорий
+              const product = doc.data();
+              product.id = doc.id;
+      
+              newProducts.push(product);
+            });
+            //задать новый массив как состояние компонент
+            setProducts(newProducts);
+          });
     }, []);
     
   return (
     <div className="App">
-      <AppContext.Provider value={{categories}}>
+      <AppContext.Provider value={{categories, products}}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
