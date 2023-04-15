@@ -2,13 +2,31 @@
   display: flex;
   flex-direction: column;
   max-width: 300px;
+  margin: 20px;
+  
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+
+}
+.ProductList{
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(https://balthazar.club/uploads/posts/2023-01/1674301308_balthazar-club-p-krasivie-kartinki-estetika-prirodi-instagr-45.jpg);
+  background-repeat: no-repeat;
 }
 .ProductList .Product img {
-  width: 100%;
+  width: 250px;
+  height: 300px;
+  margin-bottom: 15px;
+  
   box-shadow: 6px 5px 6px white;
   border-radius: 25px;
-}
-.Product {
-  background-color: white;
   
+}
+.Product Link {
+  color: aqua;
+}
+.ProductList .Product:hover {
+  transform: scale(0.9);
 }
