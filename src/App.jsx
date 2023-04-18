@@ -7,7 +7,8 @@ import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Category from "./pages/Category";
 import Contacts from "./pages/Contacts";
-import Delivery from "./pages/Delivery";
+import Transfer from "./pages/Services";
+import Delivery from "./pages/Services";
 import Home from "./pages/Home";
 import Reservation from "./pages/Reservation";
 
@@ -72,7 +73,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/transfer" element={<Transfer />}/>
             <Route path="/reservation" element={<Reservation />} />
             <Route path="/category/:path" element={<Category />} />
             <Route path="/cart" element={<Cart/>}/>
