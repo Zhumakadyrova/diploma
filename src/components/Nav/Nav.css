@@ -1,3 +1,4 @@
+
 .Nav ul {
   display: flex;
   list-style-type: none;
@@ -6,7 +7,19 @@
 }
 .Nav ul li a {
   color: tomato;
+  margin-top: 30px;
+  margin: 10px;
   padding: 10px;
   display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  transition: font-size 30px ease-in-out;
+  
+}
+.Nav ul li a:hover {
+  font-size: 25px;
+  text-shadow:  0 0 10px;
+  
 }
   
