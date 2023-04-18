@@ -4,18 +4,27 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import { categoryCollection, productCollection } from "./firebase";
 import About from "./pages/About";
+import Cart from "./pages/Cart";
 import Category from "./pages/Category";
+import Contacts from "./pages/Contacts";
 import Delivery from "./pages/Delivery";
 import Home from "./pages/Home";
+import Reservation from "./pages/Reservation";
 
 export const AppContext = createContext ( {
   categories: [],
   products: [],
+  //корзина
+  cart: {},
+  setCart:() => {}
 });
 
 export default function App() {
   const [categories, setCategories]= useState([]);
   const [products, setProducts] = useState([]);
+
+  //корзина
+  const [cart, setCart] = useState({});
     //выполнить эту функцию только один раз
     useEffect(() => {
       //получить категории из списка категорий
@@ -57,13 +66,16 @@ export default function App() {
     
   return (
     <div className="App">
-      <AppContext.Provider value={{categories, products}}>
+      <AppContext.Provider value={{categories, products, cart, setCart}}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
+            <Route path="/reservation" element={<Reservation />} />
             <Route path="/category/:path" element={<Category />} />
+            <Route path="/cart" element={<Cart/>}/>
           </Routes>
         </Layout>
       </AppContext.Provider>
