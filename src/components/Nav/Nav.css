@@ -5,16 +5,15 @@
   margin: 0;
   padding: 0;
 }
-.Nav ul li a {
+.Nav li a {
   color: tomato;
-  margin-top: 30px;
-  margin: 10px;
+  margin: 40px 10px;
   padding: 10px;
   display: block;
   text-decoration: none;
   color: white;
   font-size: 22px;
-  transition: font-size 30px ease-in-out;
+  transition: font-size 15px ease-in-out;
   
 }
 .Nav ul li a:hover {
