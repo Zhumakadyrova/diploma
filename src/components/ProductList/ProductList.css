@@ -24,8 +24,14 @@
 .ProductList .Product:hover {
   transform: scale(0.9);
 }
-.Product Link{
+.ProductList a {
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
+  color: #7b3633;
+}
+.ProductList a:hover{
+  text-shadow: 0 0 2px #140707;
 }
 .Category{
   margin: 0;
