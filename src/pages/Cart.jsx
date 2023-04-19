@@ -1,4 +1,5 @@
 import CartList from "../components/CartList/CartList";
+import "./Cart.css";
 
 export default function Cart() {
   return(
