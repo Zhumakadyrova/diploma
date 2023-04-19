@@ -1,0 +1,13 @@
+button {
+  background-color: #c6f6f65a;
+  border: 0.8px solid #7b3633;
+  border-radius: 5px;
+  padding: 4px 6px;
+  transition: font-size 12px ease-out;
+}
+button:hover{
+  text-shadow: 0 0 2px #7b3633;
+}
+button:active{
+  font-size: 14px;
+}
