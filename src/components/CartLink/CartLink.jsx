@@ -10,7 +10,7 @@ export default function CartLink() {
   return (
     <div className="CartLink">
       <Link to="/cart">
-        Cart ({total})
+        <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/shopping_cart.png" className="Cart-pht"/>({total})
       </Link>
     </div>
   );
