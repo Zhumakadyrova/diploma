@@ -1,5 +1,5 @@
 .CategoryList li {
-  background-color: rgba(0, 213, 255, 0.086);
+  background-color: #c6f6f65a;
   padding: 10px 5px;
   list-style-type: none;
   font-size: 18px;
@@ -14,7 +14,7 @@
 }
 .CategoryList li a{
   text-decoration: none;
-  color: black;
+  color: #7b3633;
 
 
 }
