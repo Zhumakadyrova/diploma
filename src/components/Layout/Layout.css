@@ -1,5 +1,5 @@
 .Layout {
-  max-width: 789px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +19,7 @@
 }
 .Layout main {
   flex: 80% 1 1;
-  background-color: rgb(168, 160, 255);
+  /* background-color: rgb(168, 160, 255); */
 }
 .Layout footer {
   flex: 100% 0 0;
