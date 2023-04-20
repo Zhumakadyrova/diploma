@@ -18,6 +18,7 @@
 }
 .Nav ul li a:hover {
   font-size: 25px;
+  padding: 0;
   text-shadow:  0 0 10px;
   
 }
