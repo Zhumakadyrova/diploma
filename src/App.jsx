@@ -1,6 +1,6 @@
 import { getDocs } from "firebase/firestore";
 import { createContext, useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import { categoryCollection, productCollection } from "./firebase";
 import About from "./pages/About";
@@ -11,6 +11,7 @@ import Transfer from "./pages/Services";
 import Delivery from "./pages/Services";
 import Home from "./pages/Home";
 import Reservation from "./pages/Reservation";
+import NotFound from "./pages/NotFound";
 
 export const AppContext = createContext ( {
   categories: [],
@@ -25,7 +26,15 @@ export default function App() {
   const [products, setProducts] = useState([]);
 
   //корзина
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState(() => {
+    //востановить содержимое картины с памяти браузера.
+    return JSON.parse(localStorage.getItem("cart")) || {};
+  });
+  //выполнить эту функцию когда содержимое корзины меняется
+  useEffect(() =>{
+    // сщхрфнить содержимое корзины в памяти браузера 
+    localStorage.setItem("cart",JSON.stringify(cart));
+  }, [cart]);
     //выполнить эту функцию только один раз
     useEffect(() => {
       //получить категории из списка категорий
@@ -77,6 +86,7 @@ export default function App() {
             <Route path="/reservation" element={<Reservation />} />
             <Route path="/category/:path" element={<Category />} />
             <Route path="/cart" element={<Cart/>}/>
+            <Route path="*" element={<NotFound/>} />
           </Routes>
         </Layout>
       </AppContext.Provider>
