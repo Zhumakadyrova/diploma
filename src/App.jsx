@@ -12,6 +12,7 @@ import Delivery from "./pages/Services";
 import Home from "./pages/Home";
 import Reservation from "./pages/Reservation";
 import NotFound from "./pages/NotFound";
+import Product from "./pages/Product";
 
 export const AppContext = createContext ( {
   categories: [],
@@ -82,11 +83,12 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/transfer" element={<Transfer />}/>
+            <Route path="/transfer" element={<Transfer />} />
             <Route path="/reservation" element={<Reservation />} />
             <Route path="/category/:path" element={<Category />} />
-            <Route path="/cart" element={<Cart/>}/>
-            <Route path="*" element={<NotFound/>} />
+            <Route path="/product/:path" element={<Product />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
