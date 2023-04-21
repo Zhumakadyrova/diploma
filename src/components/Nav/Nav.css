@@ -1,25 +1,25 @@
-
 .Nav ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 480px;
 }
-.Nav li a {
+.Nav li {
+  width: 25%;
+}
+.Nav a {
   color: tomato;
   margin: 40px 10px;
   padding: 10px;
   display: block;
   text-decoration: none;
   color: white;
-  font-size: 22px;
-  transition: font-size 15px ease-in-out;
-  
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
 }
-.Nav ul li a:hover {
-  font-size: 25px;
+.Nav a:hover {
+  font-size: 20px;
   padding: 0;
-  text-shadow:  0 0 10px;
-  
+  text-shadow: 0 0 10px;
 }
-  
