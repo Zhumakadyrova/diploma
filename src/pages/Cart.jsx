@@ -1,4 +1,5 @@
 import CartList from "../components/CartList/CartList";
+import OrderForm from "../components/OrderForm/OrderForm";
 import "./Cart.css";
 
 export default function Cart() {
@@ -6,6 +7,7 @@ export default function Cart() {
     <div className="Cart">
       <h1>Cart</h1>
       <CartList/>
+      <OrderForm/>
     </div>
   )
 }
