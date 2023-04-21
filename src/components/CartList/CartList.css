@@ -1,8 +1,10 @@
 .CartList {
+  padding: 15px 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .CartList .CartItem img {
-  width: 80px;
+  max-width: 80px;
 }
