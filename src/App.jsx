@@ -7,7 +7,7 @@ import {
   productCollection,
   onAuthChange,
 } from "./firebase";
-import About from "./pages/About";
+import About from "./pages/Discounts";
 import Cart from "./pages/Cart";
 import Category from "./pages/Category";
 import Contacts from "./pages/Contacts";
@@ -108,7 +108,7 @@ export default function App() {
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/thank-you" element= {<ThankYou />} />
+            <Route path="/thank-you" element={<ThankYou />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
