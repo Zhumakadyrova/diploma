@@ -5,9 +5,9 @@ button {
   padding: 4px 6px;
   transition: font-size 12px ease-out;
 }
-button:hover{
+button:hover {
   text-shadow: 0 0 2px #7b3633;
 }
-button:active{
+button:active {
   font-size: 14px;
 }

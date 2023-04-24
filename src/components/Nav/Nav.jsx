@@ -5,11 +5,21 @@ export default function Nav() {
   return (
     <nav className="Nav">
       <ul>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/reservation">Reservation</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="/contacts">Contacts</NavLink></li>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/discount">Discounts</NavLink>
+        </li>
+        <li>
+          <NavLink to="/reservation">Reservation</NavLink>
+        </li>
+        <li>
+          <NavLink to="/services">Services</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contacts">Contacts</NavLink>
+        </li>
       </ul>
     </nav>
   );

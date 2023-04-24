@@ -6,9 +6,9 @@ import AddToCart from "../components/AddToCart/AddToCart";
 
 export default function Product() {
   const { params } = useMatch("/product/:path");
-  const { products } = useContext(AppContext); 
+  const { products } = useContext(AppContext);
 
-  const product = products.find(product => product.path === params.path);
+  const product = products.find((product) => product.path === params.path);
 
   if (!product) {
     return <NotFound />;
