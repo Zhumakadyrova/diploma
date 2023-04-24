@@ -1,0 +1,22 @@
+.Auth {
+  margin: 25px;
+}
+button{
+  width: 75px;
+  height: 30px;
+  transition: 0.3s ease;
+}
+button:hover {
+  transform: scale(1.2);
+}
+
+.Login button {
+  background-color: rgb(104, 213, 14);
+  color: white;
+  font-weight: bold;
+}
+.Logout button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
