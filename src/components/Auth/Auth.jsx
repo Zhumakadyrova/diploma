@@ -8,14 +8,14 @@ export default function Auth() {
 
   // показывается гостю
   let output = (
-    <span>
+    <span className="Login">
       Guest <button onClick={logIn}>Sign in</button>
     </span>
   );
   // показывается пользователю
   if (user) {
     output = (
-      <span>
+      <span className="Logout">
         {user.displayName}
         <button onClick={logOut}>Sign out</button>
       </span>
