@@ -1,3 +1,6 @@
+.CartLink{
+  position: relative;
+}
 .CartLink-total {
   color: white;
   font-size: 12px;
@@ -8,9 +11,10 @@
   float: right;
   text-decoration: none;
   position: absolute;
+  right: -3px;
+  top: -6px;
 }
 .Cart-pctr {
-  position: relative;
   height: 35px;
   width: 35px;
   border-radius: 45%;
