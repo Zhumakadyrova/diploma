@@ -6,6 +6,7 @@ import {
   categoryCollection,
   productCollection,
   onAuthChange,
+  orderCollection,
 } from "./firebase";
 import About from "./pages/Discounts";
 import Cart from "./pages/Cart";
@@ -18,11 +19,12 @@ import Reservation from "./pages/Reservation";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import ThankYou from "./pages/ThankYou";
+import Orders from "./pages/Orders";
 
 export const AppContext = createContext({
   categories: [],
   products: [],
-
+  orders:[],
   // корзина
   cart: {},
   setCart: () => {},
@@ -33,6 +35,7 @@ export const AppContext = createContext({
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   // состояние которое хранит информацию пользователя
   const [user, setUser] = useState(null);
@@ -87,7 +90,25 @@ export default function App() {
       setProducts(newProducts);
     });
 
-    onAuthChange((user) => {
+    // получить продукты из списка продуктов
+    getDocs(orderCollection).then((snapshot) => {
+      // продукты будут храниться в snapshot.docs
+
+      // создать массив для продуктов
+      const newOrders = [];
+      // заполнить массив данными из списка продвук
+      snapshot.docs.forEach((doc) => {
+        // doc = продукт
+        const order = doc.data();
+        order.id = doc.id;
+
+        newOrders.push(order);
+      });
+      // задать новый массив как состояние комапо
+      setOrders(newOrders);
+    });
+
+    onAuthChange(user => {
       setUser(user);
     });
   }, []);
@@ -95,7 +116,7 @@ export default function App() {
   return (
     <div className="App">
       <AppContext.Provider
-        value={{ categories, products, cart, setCart, user }}
+        value={{ categories, products, cart, setCart, user, orders }}
       >
         <Layout>
           <Routes>
@@ -109,6 +130,7 @@ export default function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/orders" element={<Orders/>}/>
           </Routes>
         </Layout>
       </AppContext.Provider>
