@@ -20,3 +20,7 @@ button:hover {
   color: white;
   font-weight: bold;
 }
+.OrderLink{
+  color: white;
+  text-decoration: none;
+}
