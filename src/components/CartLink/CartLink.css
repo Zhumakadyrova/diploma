@@ -4,11 +4,13 @@
   font-weight: bold;
   background-color: red;
   border-radius: 50%;
-  padding: 3px;
+  padding: 2px 6px;
   float: right;
   text-decoration: none;
+  position: absolute;
 }
 .Cart-pctr {
+  position: relative;
   height: 35px;
   width: 35px;
   border-radius: 45%;
