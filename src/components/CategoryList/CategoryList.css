@@ -1,4 +1,4 @@
-.CategoryList li {
+/* .CategoryList li {
   background-color: #c6f6f65a;
   padding: 10px 5px;
   list-style-type: none;
@@ -14,4 +14,60 @@
 .CategoryList li a {
   text-decoration: none;
   color: #7b3633;
+} */
+.CategoryList ul{
+  list-style-type:circle;
+  margin: 20%;
+}
+.dropBtn {
+  background-color: #c6f6f65a;
+  color: rgb(90, 13, 13);
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.dropBtn:hover {
+  background-color: #c6f6f65a;
+}
+.CategoryList {
+  position: relative;
+  display: inline-block;
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #c6f6f65a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin: 0;
+  border-radius: 5px;
+  padding: 0;
+}
+.dropdownContent li a{
+  list-style-type: none;
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+.dropdownContent li {
+  background-color:#c6f6f65a;
+  list-style-type: none;
+}
+.CategoryList:hover .dropdownContent {
+  display: block;
+  margin: 5px;
+  box-shadow: 0 0 20px black;
+}
+.dropdownContent li:hover {
+  background-color:beige;
+}
+.dropdownContent li a:hover {
+  transform: translateX(5px);
+  transition: 200ms ease all;
+  color:burlywood ;
 }
