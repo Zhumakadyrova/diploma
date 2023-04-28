@@ -16,13 +16,14 @@
 
 .Layout aside {
   flex: 20% 0 0;
-  background-color: azure;
+  background-color: #c6f6f65a;
 }
 .Layout main {
   flex: 80% 1 1;
   /* background-color: rgb(168, 160, 255); */
 }
 .Layout footer {
+  height: 300px;
   flex: 100% 0 0;
   background-color: rgb(235, 235, 235);
 }
