@@ -1,12 +1,12 @@
 .Auth {
   margin-left: 25px;
 }
-button {
+/* button {
   transition: 0.3s ease;
-}
-button:hover {
+} */
+/* button:hover {
   transform: scale(1.2);
-}
+} */
 
 .Login button {
   background-color: rgb(104, 213, 14);
