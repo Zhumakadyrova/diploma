@@ -1,12 +1,12 @@
-import { getDocs } from "firebase/firestore";
+
 import { createContext, useEffect, useState } from "react";
 import { Route, Router, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import {
-  categoryCollection,
-  productCollection,
   onAuthChange,
-  orderCollection,
+  onCategoriesLoad,
+  onProductsLoad,
+  onOrdersLoad,
 } from "./firebase";
 import About from "./pages/Discounts";
 import Cart from "./pages/Cart";
@@ -52,63 +52,70 @@ export default function App() {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  // выполнить эту функцию только один раз
+  // // выполнить эту функцию только один раз
+  // useEffect(() => {
+  //   // получить категории из списка категорий
+  //   getDocs(categoryCollection).then((snapshot) => {
+  //     // категории будут храниться в snapshot.docs
+
+  //     // создать массив для категорий
+  //     const newCategories = [];
+  //     // заполнить массив данными из списка категорий
+  //     snapshot.docs.forEach((doc) => {
+  //       // doc = категория
+  //       const category = doc.data();
+  //       category.id = doc.id;
+
+  //       newCategories.push(category);
+  //     });
+  //     // задать новый массив как состояние комапо
+  //     setCategories(newCategories);
+  //   });
+
+  //   // получить продукты из списка продуктов
+  //   getDocs(productCollection).then((snapshot) => {
+  //     // продукты будут храниться в snapshot.docs
+
+  //     // создать массив для продуктов
+  //     const newProducts = [];
+  //     // заполнить массив данными из списка продвук
+  //     snapshot.docs.forEach((doc) => {
+  //       // doc = продукт
+  //       const product = doc.data();
+  //       product.id = doc.id;
+
+  //       newProducts.push(product);
+  //     });
+  //     // задать новый массив как состояние комапо
+  //     setProducts(newProducts);
+  //   });
+
+  //   // получить продукты из списка продуктов
+  //   getDocs(orderCollection).then((snapshot) => {
+  //     // продукты будут храниться в snapshot.docs
+
+  //     // создать массив для продуктов
+  //     const newOrders = [];
+  //     // заполнить массив данными из списка продвук
+  //     snapshot.docs.forEach((doc) => {
+  //       // doc = продукт
+  //       const order = doc.data();
+  //       order.id = doc.id;
+
+  //       newOrders.push(order);
+  //     });
+  //     // задать новый массив как состояние комапо
+  //     setOrders(newOrders);
+  //   });
   useEffect(() => {
-    // получить категории из списка категорий
-    getDocs(categoryCollection).then((snapshot) => {
-      // категории будут храниться в snapshot.docs
-
-      // создать массив для категорий
-      const newCategories = [];
-      // заполнить массив данными из списка категорий
-      snapshot.docs.forEach((doc) => {
-        // doc = категория
-        const category = doc.data();
-        category.id = doc.id;
-
-        newCategories.push(category);
-      });
-      // задать новый массив как состояние комапо
-      setCategories(newCategories);
-    });
-
-    // получить продукты из списка продуктов
-    getDocs(productCollection).then((snapshot) => {
-      // продукты будут храниться в snapshot.docs
-
-      // создать массив для продуктов
-      const newProducts = [];
-      // заполнить массив данными из списка продвук
-      snapshot.docs.forEach((doc) => {
-        // doc = продукт
-        const product = doc.data();
-        product.id = doc.id;
-
-        newProducts.push(product);
-      });
-      // задать новый массив как состояние комапо
-      setProducts(newProducts);
-    });
-
-    // получить продукты из списка продуктов
-    getDocs(orderCollection).then((snapshot) => {
-      // продукты будут храниться в snapshot.docs
-
-      // создать массив для продуктов
-      const newOrders = [];
-      // заполнить массив данными из списка продвук
-      snapshot.docs.forEach((doc) => {
-        // doc = продукт
-        const order = doc.data();
-        order.id = doc.id;
-
-        newOrders.push(order);
-      });
-      // задать новый массив как состояние комапо
-      setOrders(newOrders);
-    });
-
-    onAuthChange(user => {
+    onCategoriesLoad(setCategories);
+    onProductsLoad(setProducts);
+    onOrdersLoad(setOrders);
+    
+    onAuthChange((user) => {
+      if (user) {
+        user.isAdmin = user.email === "zumakadyrovanagima@gmail.com";
+      }
       setUser(user);
     });
   }, []);
