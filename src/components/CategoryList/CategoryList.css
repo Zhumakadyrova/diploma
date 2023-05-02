@@ -1,19 +1,33 @@
- .CategoryList li {
+.CategoryList li {
   padding: 10px 5px;
   list-style-type: none;
   font-size: 14px;
+  position: relative;
 }
 .CategoryList li:hover {
   transform: translateX(7px);
   transition: 200ms ease all;
 }
 .CategoryList li:active {
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .CategoryList li a {
   text-decoration: none;
   color: #7b3633;
-} 
+}
+.CategoryList li:hover .subcategory {
+  display: block;
+}
+.subcategory {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  left: 100%;
+  top: 0;
+  z-index: 10; 
+  color: #000;
+}
 /* 
  
 .CategoryList ul{
