@@ -16,6 +16,8 @@
 }
 
 .Layout aside {
+  position: relative;
+  z-index: 100;
   flex: 20% 0 0;
   background-color: #c6f6f65a;
 }
@@ -24,10 +26,28 @@
   background-image: url(https://i.pinimg.com/564x/3e/b5/90/3eb59089cc7552fdf5aff989f00a0a5e.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  position: relative;
   /* background-color: rgb(168, 160, 255); */
 }
 .Layout footer {
   height: 300px;
   flex: 100% 0 0;
   background-color: rgb(235, 235, 235);
+}
+
+
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+.main-content{
+  position: relative;
+  z-index: 2;
+  background-color: gray;
+  opacity: 50%;
+  color: antiquewhite;
 }
