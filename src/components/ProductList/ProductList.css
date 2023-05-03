@@ -12,7 +12,7 @@
 .ProductList {
   display: flex;
   flex-wrap: wrap;
-  background-image: url(https://balthazar.club/uploads/posts/2023-01/1674301308_balthazar-club-p-krasivie-kartinki-estetika-prirodi-instagr-45.jpg);
+  /* background-image: url(https://balthazar.club/uploads/posts/2023-01/1674301308_balthazar-club-p-krasivie-kartinki-estetika-prirodi-instagr-45.jpg); */
   background-repeat: no-repeat;
 }
 .ProductList .Product img {
