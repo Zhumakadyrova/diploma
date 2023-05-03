@@ -5,15 +5,28 @@ import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
 import  clip from "../../assets/video/video.mp4";
+import NavToggle from "../NavToggle/NavToggle";
+import Drawer from "../Drawer/Drawer";
+import { useState } from "react";
 
 export default function Layout(props) {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  function toggleDrawer() {
+    setDrawerOpen(!drawerOpen);
+  }
   return (
     <div className="Layout">
       <header>
         <Logo />
         <Nav />
-        <CartLink />
-        <Auth />
+        <NavToggle callback={toggleDrawer} />
+        <Drawer open={drawerOpen} toggle={toggleDrawer} />
+        <div>
+          <CartLink />
+          <Auth />
+        </div>
+        
        
       </header>
       <aside>
