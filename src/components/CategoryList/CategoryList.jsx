@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import "./CategoryList.css";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../../App";
 import DeleteCategory from "../DeleteCategory/DeleteCategory";
