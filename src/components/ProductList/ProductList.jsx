@@ -25,3 +25,19 @@ export default function ProductList({ category }) {
     </div>
   );
 }
+{/* <div className="ProductList">
+      <div className="dropdown-container">
+        <button className="dropdown-button" onClick={toggleDropdown}>
+          <span>{categoryName}</span>
+          <FaChevronDown className="dropdown-icon" />
+        </button>
+        {isDropdownOpen && (
+          <ul className="dropdown-list">
+            {categoryProducts.map((product) => (
+              <li key={product.id}>
+                <Link to={"/product/" + product.path}>{product.name}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div> */}
