@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase";
+import "./DeleteCategory.css";
 
 export default function DeleteCategory({ category }) {
   const { user, products } = useContext(AppContext);
@@ -28,7 +29,7 @@ export default function DeleteCategory({ category }) {
 
   return (
     <button className="DeleteCategory" onClick={onDeleteClick}>
-      -
+      X
     </button>
   );
 }
