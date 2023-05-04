@@ -20,7 +20,7 @@
 .Nav a:hover {
   text-shadow: 0 0 10px;
 }
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .Nav ul {
     flex-direction: column;
   }
