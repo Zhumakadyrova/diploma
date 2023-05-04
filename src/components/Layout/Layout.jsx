@@ -34,11 +34,12 @@ export default function Layout(props) {
       </aside>
       <main>
         <div className="main-content">
-          {props.children}
-        </div>
         <video className="video" autoPlay="autoplay" loop muted>
           <source src={clip} type='video/mp4' />
         </video>
+          
+        </div>
+        {props.children}
       </main>
       <footer>FOOTER</footer>
     </div>
