@@ -1,7 +1,13 @@
 .DeleteCategory{
+  width: 50px;
+  
+}
+.DeleteCategory button{
   border: none;
   margin-left: 20px;
   max-height: -2px;
   font-size: 8px;
-  width: 20px;
+  right: 10px;
+  display: block;
+  position: relative;
 }
