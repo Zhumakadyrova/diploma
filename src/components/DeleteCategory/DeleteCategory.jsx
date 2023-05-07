@@ -28,8 +28,11 @@ export default function DeleteCategory({ category }) {
   }
 
   return (
-    <button className="DeleteCategory" onClick={onDeleteClick}>
-      X
-    </button>
+    <div className="DeleteCategory">
+      <button  onClick={onDeleteClick}>
+        X
+      </button>
+    </div>
+
   );
 }
