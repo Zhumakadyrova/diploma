@@ -14,11 +14,16 @@
   padding: 10px;
   display: block;
   text-decoration: none;
-  color: white;
+  color: rgb(28, 12, 12);
   font-size: 15px;
 }
 .Nav a:hover {
-  text-shadow: 0 0 10px;
+  color: rgba(28, 12, 12, 0.462);
+  text-shadow: 0 0 1px;
+}
+.Nav a:focus {
+  color: #7b3633;
+  text-shadow: 0 0 1px;
 }
 @media (max-width: 750px) {
   .Nav ul {
