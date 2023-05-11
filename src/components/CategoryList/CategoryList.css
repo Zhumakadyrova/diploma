@@ -11,6 +11,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding: 6px;
 }
 .CategoryList a {
   text-decoration: none;
