@@ -41,7 +41,9 @@ export default function Layout(props) {
         {props.children}
         
       </main>
-      <footer>FOOTER</footer>
+      <footer>FOOTER
+        <Nav  className="Footer-nav"/>
+      </footer>
     </div>
   );
 }
