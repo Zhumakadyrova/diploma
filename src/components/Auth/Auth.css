@@ -7,18 +7,23 @@
 /* button:hover {
   transform: scale(1.2);
 } */
-
 .Login button {
   background-color: rgb(104, 213, 14);
   color: white;
   font-weight: bold;
+  max-width: 50px;
 }
 .Logout button {
   background-color: red;
   color: white;
   font-weight: bold;
+  margin-left: 0px;
 }
 .OrderLink{
-  color: white;
+  color: rgb(32, 4, 4);
   text-decoration: none;
+  width: 230px;
+}
+.Login {
+  width: 230px;
 }
