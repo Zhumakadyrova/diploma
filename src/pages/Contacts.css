@@ -1,0 +1,8 @@
+.Main_details{
+  display: flex;
+  justify-content: space-around;
+}
+.Main_details img{
+  max-width: 50px;
+  border-radius: 50px;
+}

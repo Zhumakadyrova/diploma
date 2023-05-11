@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./Contacts.css";
 export default function Contacts() {
   return (
     <div className="Contacts">
@@ -7,6 +7,14 @@ export default function Contacts() {
         <p>How can we help to spend your time?</p>
         <p>We only use natural ingredients to make our yummy ice-creams</p>
       </div>
+      <div className="Main_details">
+          <li><a href="#"><img src="https://i.pinimg.com/564x/29/47/9b/29479ba0435741580ca9f4a467be6207.jpg" alt="" /> </a></li>
+          <li><a href="#"><img src="https://i.pinimg.com/564x/9c/91/98/9c919823b4cac48bec5af1f236a39efd.jpg" alt="" /> </a></li>
+          <li><a href=""><img src="https://i.pinimg.com/236x/76/8d/9a/768d9aea2e2cbb86a28a258bb3adf3c8.jpg" alt="" /> </a></li>
+          <li><a href=""><img src="https://i.pinimg.com/564x/28/83/a3/2883a3452d9c69bdf5cd012fa91a8fb8.jpg" alt="" /> </a></li>
+          <li><a href=""><img src="https://i.pinimg.com/564x/6f/09/60/6f09603a55feff6cc4a75602d7d9bed1.jpg" alt="" /> </a></li>
+          <li><a href=""><img src="https://i.pinimg.com/564x/d7/82/77/d78277d7629c355d049595f85e43756c.jpg" alt="" /> </a></li>
+        </div>
     </div>
   );
 }
