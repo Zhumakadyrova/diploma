@@ -50,6 +50,9 @@
   
   color: antiquewhite;
 }
+.Footer-nav {
+  max-width: 200px;
+}
 @media (max-width: 750px) {
   .Layout header > .Nav {
     display: none;
