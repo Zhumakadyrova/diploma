@@ -21,7 +21,7 @@ export default function CategoryList() {
     const relatedProducts = products.filter((product) => product.category === category.id);
     const relatedProductList = relatedProducts.map((product) => (
       <li key={product.id}>
-        <NavLink to={"/product/" + product.id}>{product.name}</NavLink>
+        <NavLink to={"/product/" + product.path}>{product.name}</NavLink>
       </li>
     ));
 
