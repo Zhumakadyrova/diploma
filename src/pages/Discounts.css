@@ -1,1 +1,9 @@
-/* .Discount  */
+.Discount_name{
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-image img{
+  width: 200px;
+  max-height: 200px;
+}

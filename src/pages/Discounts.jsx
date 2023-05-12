@@ -1,4 +1,5 @@
 import "./Home.css";
+import "./Discounts.css";
 import React from "react";
 export default function Discounts() {
   return (
@@ -13,9 +14,15 @@ export default function Discounts() {
           <div className="card-image"> <img src="https://i.pinimg.com/564x/84/0d/56/840d561182c6a9647c82dd03fcd08506.jpg" alt="" /></div>
           <div className="card-text"></div>
         </div>
-      </div>
-      <div className="Discount_name">
-        <div className="Dscount_card">
+        <div className="Discount_card">
+          <div className="card-image"> <img src="https://i.pinimg.com/564x/5f/84/4a/5f844aee8c5ea610098eff26bc23f174.jpg" alt="" /></div>
+          <div className="card-text"></div>
+        </div>
+        <div className="Discount_card">
+          <div className="card-image"> <img src="https://i.pinimg.com/564x/d4/27/2c/d4272ce01c35d97d06f46777d2ddf955.jpg" alt="" /></div>
+          <div className="card-text"></div>
+        </div>
+        <div className="Discount_card">
           <div className="card-image"> <img src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg" alt="" /></div>
           <div className="card-text"></div>
         </div>
