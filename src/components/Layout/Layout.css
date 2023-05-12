@@ -29,8 +29,8 @@
   background-repeat: repeat;
   background-size: 100%;
   /* position: relative; */
-  /* z-index: -20; */
-  background-color: rgba(0, 0, 0, 0.074);
+  z-index: +20;
+  background-color: black;
 }
 .Layout footer {
   height: 300px;
@@ -42,7 +42,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: +2;
 }
 .main-content{
   position: relative;
@@ -50,8 +50,11 @@
    
   color: antiquewhite;
 }
-.Footer-nav {
-  max-width: 200px;
+footer{
+  display: flex;
+}
+footer Nav{
+  display: flex;
 }
 @media (max-width: 750px) {
   .Layout header > .Nav {
