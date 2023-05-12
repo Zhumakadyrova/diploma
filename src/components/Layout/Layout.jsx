@@ -8,7 +8,6 @@ import  clip from "../../assets/video/video.mp4";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
 import { useState } from "react";
-import Example from "../PhotoSlide/PhotoSlide";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
