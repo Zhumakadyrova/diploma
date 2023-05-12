@@ -29,7 +29,7 @@
   background-repeat: repeat;
   background-size: 100%;
   /* position: relative; */
-  z-index: +20;
+  z-index: 20;
   background-color: black;
 }
 .Layout footer {
@@ -42,7 +42,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: +2;
+  z-index: -20;
 }
 .main-content{
   position: relative;
