@@ -20,6 +20,8 @@ import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
+import Services from "./pages/Services";
+import Discounts from "./pages/Discounts";
 
 export const AppContext = createContext({
   categories: [],
@@ -131,6 +133,8 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/transfer" element={<Transfer />} />
+            <Route path ="/services" element= {< Services/>} />
+            <Route path = "/discount" element={<Discounts/>} />
             <Route path="/reservation" element={<Reservation />} />
             <Route path="/category/:path" element={<Category />} />
             <Route path="/product/:path" element={<Product />} />
