@@ -14,10 +14,14 @@ export default function ProductList({ category }) {
     .map((product) => (
       <div className="Product" key={product.id}>
         <img src={product.picture} alt={product.name} />
-        <Link to={"/product/" + product.path}>{product.name}</Link>
-        <span>{product.price} USD </span>
-        <AddToCart product={product} />
-        <DeleteProduct product={product} />
+        <div className="Product_info">
+          <Link to={"/product/" + product.path}>{product.name}</Link><br />
+          <span>{product.price} USD </span>
+          <div className="AddRemove">
+            <AddToCart product={product} />
+            <DeleteProduct product={product} className="DeleteProduct" />
+          </div>
+        </div>
       </div>
     ));
   return (
@@ -27,19 +31,4 @@ export default function ProductList({ category }) {
     </div>
   );
 }
-{/* <div className="ProductList">
-      <div className="dropdown-container">
-        <button className="dropdown-button" onClick={toggleDropdown}>
-          <span>{categoryName}</span>
-          <FaChevronDown className="dropdown-icon" />
-        </button>
-        {isDropdownOpen && (
-          <ul className="dropdown-list">
-            {categoryProducts.map((product) => (
-              <li key={product.id}>
-                <Link to={"/product/" + product.path}>{product.name}</Link>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div> */}
+
