@@ -1,17 +1,18 @@
-/* .AddProduct {
+.AddProduct {
   color: wheat;
   background-color: black;
   max-width: 400px;
-  max-height: 200px;
-  padding: 10px;
+  max-height: 300px;
+  padding: 20px 30px;
 }
 .AddProduct label{
-  padding: 8px;
   color: antiquewhite;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 30px;
 }
 .AddProduct button {
-  margin: 0 auto;
   display: flex;
   background-color: aqua;
-} */
+}
