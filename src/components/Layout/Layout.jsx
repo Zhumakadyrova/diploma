@@ -8,6 +8,7 @@ import  clip from "../../assets/video/video.mp4";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
 import { useState } from "react";
+import Example from "../PhotoSlide/PhotoSlide";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -39,10 +40,18 @@ export default function Layout(props) {
         </video>
         </div>
         {props.children}
-        
+        {/* {Example} */}
       </main>
-      <footer>FOOTER
-        <Nav  className="Footer-nav"/>
+      <footer>
+        <div className="Footer_link">
+          <h3>Links</h3>
+          <Nav/>
+        </div>
+        <div className="footer_contacts">
+          <h3>Contact us</h3>
+          <p>zhumakadyrova9@gmail.com</p>
+          <p>+996550197557</p>
+        </div>
       </footer>
     </div>
   );
