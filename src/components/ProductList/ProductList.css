@@ -42,12 +42,13 @@
   font-weight: 600;
   text-decoration: none;
   color: #7b3633;
+  transition: 0.3s;
 }
 .ProductList a:hover {
   text-shadow: 0 0 2px #140707;
 }
 .Category {
   margin: 0;
-  background-color: #c6f6f65a;
+  color: #7b3633;
 }
 
