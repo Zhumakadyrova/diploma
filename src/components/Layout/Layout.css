@@ -22,7 +22,7 @@
 .Layout aside {
   padding: 0 15px;
   position: relative;
-  z-index: 100;
+  z-index: 50;
   flex: 20% 0 0;
   background-color: #c6f6f65a;
 }
@@ -33,6 +33,7 @@
   /* position: relative; */
   z-index: 20;
   background-color: black;
+  min-height: 800px;
 }
 .Layout footer {
   height: 300px;
@@ -44,7 +45,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: -20;
+  z-index: -200;
 }
 .main-content{
   position: relative;
