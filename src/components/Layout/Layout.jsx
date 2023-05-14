@@ -29,7 +29,6 @@ export default function Layout(props) {
         
        
       </header>
-      <div></div>
       <aside>
         <CategoryList />
       </aside>

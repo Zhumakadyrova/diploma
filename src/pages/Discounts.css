@@ -1,9 +1,22 @@
 .Discount_name{
-  margin-top: 300px;
+  margin-top: 400px;
   display: flex;
   justify-content: space-evenly;
 }
 .card-image img{
   width: 200px;
   max-height: 200px;
+}
+.card-text{
+background-color: rgba(255, 255, 255, 0.888); 
+color: #7b3633;
+}
+.Main_discount{
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.Main_discount col-6 img{
+  width: 100%;
 }
