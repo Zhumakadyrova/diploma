@@ -1,7 +1,7 @@
 .Main {
   background-color: rgba(235, 235, 235, 0.548);
   max-width: 300px;
-  margin: 50px;
+  margin: 90px;
   padding: 20px;
   text-align: center;
 }
@@ -14,4 +14,34 @@
 .Main_details{
   margin-top: 350px;
   color: wheat;
+}
+.Cntct{
+  display: flex;
+  justify-content: center;
+}
+.Cnct_link{
+  margin-top: 150px;
+  background: linear-gradient(-45deg, #ee7652a1, #c6f6f65a, #a523d577, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+  text-align: center; 
+  width: 200px;
+  padding: 20px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.Cnct_link a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
