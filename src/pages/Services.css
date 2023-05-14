@@ -1,17 +1,22 @@
 .Main {
   background-color: rgba(235, 235, 235, 0.548);
   max-width: 300px;
-  margin: 50px;
+  margin: 80px;
   text-align: center;
 }
 /* .Link a{
   color: wheat;
 } */
-.Main h1{
-  background-color: wheat;
-  padding: px 0
-}
+
 /* .Main_details{
   margin-top: 350px;
   color: wheat;
 } */
+.question_list{
+  margin: 380px 30px;
+}
+.question_row{
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+}
