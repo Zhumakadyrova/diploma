@@ -3,8 +3,22 @@ button {
   border: none;
   padding: 4px 6px;
   box-shadow: 6px 6px 6px rgba(5, 85, 116, 0.056);
+  transition: 0.3s;
 }
 button:hover {
   text-shadow: 0 0 2px #7b3633;
+  background: linear-gradient(90deg, rgba(97,72,198,1) 0%, rgba(19,131,55,0.7428221288515406) 35%, rgba(16,238,101,1) 63%, rgba(20,232,112,1) 67%, rgba(37,238,99,1) 100%);
+}
+/* @media (max-width 1px) {
+  button:hover {
+    text-shadow: 0 0 2px #7b3633;
+    background: linear-gradient(90deg,  rgba(15,186,162,1) 67%, rgba(5,60,22,1) 100%), rgba(2,0,36,1) 0%, rgba(30,161,72,0.7876400560224089) 35%, rgba(17,183,151,1) 63%;
+  }
 }
 
+@media (max-width 100) {
+  button:hover {
+    text-shadow: 0 0 2px #7b3633;
+    background: linear-gradient(90deg,  rgba(15,186,162,1) 67%, rgba(5,60,22,1) 100%), rgba(2,0,36,1) 0%, rgba(30,161,72,0.7876400560224089) 35%, rgba(17,183,151,1) 63%;
+  }
+} */
