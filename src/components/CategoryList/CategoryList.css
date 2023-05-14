@@ -6,21 +6,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 .CategoryList li {
   position: relative;
   display: flex;
   align-items: center;
   padding: 6px;
+  max-width: 180px;
 }
 .CategoryList a {
   text-decoration: none;
   margin-right: 10px;
   color: #7b3633;
+  
 } 
 .CategoryList .dropdownContent {
   position: relative;
-  z-index: 4;
+  z-index: 40;
 }
 .subcategory {
   display: none;
@@ -30,12 +33,13 @@
   left: 100%;
   top: 0;
   z-index: 10; 
-  color: #000;
+  color: #000; 
+  transition: 20s ease all;
 }
 .CategoryList li:hover .subcategory {
   display: block;
+  margin: 0;
   transform: translateX(7px);
-  transition: 200ms ease all;
   width: 150px;
 }
 .CategoryList li:hover :hover .DeleteCategory{

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import "./CategoryList.css";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../../App";
@@ -8,6 +8,7 @@ import AddCategory from "../AddCategory/AddCategory";
 export default function CategoryList() {
   const { categories, products } = useContext(AppContext);
   const [showSubcategories, setShowSubcategories] = useState({});
+  const [dropdownDelay, setDropdownDelay] = useState(300);
 
   const handleMouseEnter = (categoryId) => {
     setShowSubcategories((prev) => ({ ...prev, [categoryId]: true }));
@@ -24,7 +25,7 @@ export default function CategoryList() {
         <NavLink to={"/product/" + product.path}>{product.name}</NavLink>
       </li>
     ));
-
+    
     const showSubcategory = showSubcategories[category.id];
 
     return (
@@ -42,9 +43,17 @@ export default function CategoryList() {
     );
   });
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDropdownDelay(0);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="CategoryList">
-      <ul id="dropdown" className="dropdownContent">
+      <ul id="dropdown" className="dropdownContent" style={{ transitionDelay: `${dropdownDelay}ms` }}>
         {output}
       </ul>
       <AddCategory />
