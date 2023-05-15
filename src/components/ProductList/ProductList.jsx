@@ -25,10 +25,13 @@ export default function ProductList({ category }) {
       </div>
     ));
   return (
-    <div className="ProductList">
+    <div className="bg">
+      <div className="ProductList">
       {output}
       <AddProduct category={category} />
+      </div>
     </div>
+    
   );
 }
 

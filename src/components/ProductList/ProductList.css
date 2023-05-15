@@ -1,3 +1,4 @@
+
 .ProductList .Product {
   display: flex;
   flex-direction: column;
@@ -12,15 +13,17 @@
 .ProductList {
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient(rgba(230, 0, 255, 0.319), 
-  rgba(0, 221, 255, 0.63)), url(https://i.pinimg.com/564x/d4/9f/38/d49f380e757b7f3231b1522664677af2.jpg);
-  background-repeat:calc(100%);
-  width: 100%;
-
+  
 }
 .ProductList .Product img {
   width: 250px;
   height: 300px;
+}
+.bg{
+  background-image: linear-gradient(rgba(230, 0, 255, 0.319), 
+  rgba(0, 221, 255, 0.63)), url(https://i.pinimg.com/564x/d4/9f/38/d49f380e757b7f3231b1522664677af2.jpg);
+  background-repeat:calc(100%);
+  min-height: 800px;
 }
 .Product_info{
   padding: 10px;
