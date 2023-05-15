@@ -12,9 +12,6 @@ export default function Nav() {
           <NavLink to="/discount">Discounts</NavLink>
         </li>
         <li>
-          <NavLink to="/reservation">Reservation</NavLink>
-        </li>
-        <li>
           <NavLink to="/services">Services</NavLink>
         </li>
         <li>
