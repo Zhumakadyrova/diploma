@@ -13,9 +13,8 @@ import Cart from "./pages/Cart";
 import Category from "./pages/Category";
 import Contacts from "./pages/Contacts";
 import Transfer from "./pages/Services";
-import Delivery from "./pages/Services";
 import Home from "./pages/Home";
-import Reservation from "./pages/Reservation";
+// import Reservation from "./pages/Reservation";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import ThankYou from "./pages/ThankYou";
@@ -135,7 +134,6 @@ export default function App() {
             <Route path="/transfer" element={<Transfer />} />
             <Route path ="/services" element= {< Services/>} />
             <Route path = "/discount" element={<Discounts/>} />
-            <Route path="/reservation" element={<Reservation />} />
             <Route path="/category/:path" element={<Category />} />
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
