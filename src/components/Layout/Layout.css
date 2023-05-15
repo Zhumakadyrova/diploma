@@ -33,7 +33,7 @@
   /* position: relative; */
   z-index: 20;
   background-color: black;
-  min-height: 800px;
+  min-height: 1500px;
 }
 .Layout footer {
   height: 300px;
