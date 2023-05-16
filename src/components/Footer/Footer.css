@@ -1,0 +1,52 @@
+.Footer{
+  margin: 0 100px;
+}
+.Footer_bottom{
+  margin: 0 auto;
+}
+.Footer_bottom ul{
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+.Footer_bottom img{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+footer {
+  display: flex;
+  width: 100%;
+  background-color: rgba(235, 235, 235, 0.416);
+}
+footer{
+  display: flex;
+}
+.Footer_link{
+  display: flex;
+  padding: 20px;
+}
+.Footer_link .Nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.Footer_link h3{
+  margin: none;
+}
+.Footer_link .Nav ul li{
+  height: 60px;
+}
+footer .Logo{
+  width: 200px;
+}
+.Card_image img{
+  height: 50px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
