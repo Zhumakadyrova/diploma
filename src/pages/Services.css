@@ -13,10 +13,43 @@
   color: wheat;
 } */
 .question_list{
-  margin: 380px 30px;
+  margin: 330px 30px 80px;
 }
 .question_row{
-  background-color: wheat;
   display: flex;
   justify-content: center;
+}
+.question_row .col-8{
+  width: 70%;
+  margin: 5px;
+  height: 80px;
+  background: linear-gradient(-45deg, #ee7652a1, #c6f6f65a, #a523d577, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.question_row .col-4{
+  margin: 5px;
+  width: 20%;
+  background-color: white;
+}
+.Services ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+ul img{
+  max-height: 80px;
+  border-radius: 40%;
+  width: 70px;
 }
