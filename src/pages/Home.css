@@ -28,6 +28,23 @@
   width: 200px;
   padding: 20px;
 }
+.Home_info{
+  display: flex;
+  height: 400px;
+  justify-content: baseline;
+  margin: 100px;
+}
+.Home_content{
+  height: 400px;
+  width: 500px;
+  background-image: url(src/assets/pages_photo/reservation-photo.jpg);
+  margin: 0 30px;
+}
+.Home_content__text{
+background-color: white;
+height: 400px;
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;

@@ -1,5 +1,6 @@
 import "./Home.css";
 import React from "react";
+
 export default function Home() {
   return (
     <div className="Home">
@@ -10,7 +11,24 @@ export default function Home() {
       </div>
       <div className="Cntct">
         <div className="Cnct_link">
-          <a href="./Contacts.jsx" className="Cnct_link">Contact us </a>
+          <a href="./Contacts.jsx" className="Cnct_link">
+            Contact us{" "}
+          </a>
+        </div>
+      </div>
+      <div className="Home_info">
+        <div className="Home_content">
+          <h3>Best travel agency</h3>
+          <h2>Explore the world</h2>
+        </div>
+        <div className="Home_content__text">
+          <h2>About us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            vero saepe obcaecati quis non delectus qui animi mollitia sapiente
+            vitae perspiciatis quam natus, consequatur enim dolores aperiam
+            fugit repellendus rem?
+          </p>
         </div>
       </div>
     </div>
