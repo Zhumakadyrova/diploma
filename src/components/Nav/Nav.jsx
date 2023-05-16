@@ -18,6 +18,7 @@ export default function Nav() {
           <NavLink to="/contacts">Contacts</NavLink>
         </li>
       </ul>
+      
     </nav>
   );
 }
