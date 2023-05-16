@@ -11,38 +11,43 @@ export default function Footer(Footer) {
     <div className="Footer">
       <div className="Footer_link">
         <div className="Logo">
-        <Logo />
+          <Logo />
         </div>
         <div className="Footer_nav">
-        <h3>Links</h3>
-        <Nav />
+          <h3>Links</h3>
+          <Nav />
         </div>
         <div className="Footer_news">
           <h3>Latest news</h3>
           <div className="Footer_card">
             <div className="Footer_card_1">
               <div className="Card_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id officiis. <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, id officiis. <br />
                 <span>19.06.2023</span>
               </div>
-              <div className="Card_image"><img src={footer_image} alt="" /></div>
+              <div className="Card_image">
+                <img src={footer_image} alt="" />
+              </div>
             </div>
             <div className="Footer_card_1">
               <div className="Card_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id officiis. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, id officiis.
                 <span>19.06.2023</span>
               </div>
-              <div className="Card_image"><img src={footer_image} alt="" /></div>
+              <div className="Card_image">
+                <img src={footer_image} alt="" />
+              </div>
             </div>
-          </div>  
+          </div>
         </div>
         <div className="footer_contacts">
-        <h3>Contact us</h3>
-        <p>zhumakadyrova9@gmail.com</p>
-        <p>+996550197557</p>
-        
+          <h3>Contact us</h3>
+          <p>zhumakadyrova9@gmail.com</p>
+          <p>+996550197557</p>
+        </div>
       </div>
-      </div>   
       <div className="Footer_bottom">
         <ul>
           <li>

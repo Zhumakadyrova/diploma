@@ -1,29 +1,16 @@
 .Footer{
-  margin: 0 100px;
-}
-.Footer_bottom{
-  margin: 0 auto;
-}
-.Footer_bottom ul{
-  display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
-}
-.Footer_bottom img{
-  height: 40px;
-  width: 40px;
-  margin: 10px;
+  margin: 0 30px;
 }
 footer {
-  display: flex;
   width: 100%;
   background-color: rgba(235, 235, 235, 0.416);
 }
-footer{
-  display: flex;
+footer .Logo{
+  width: 200px;
 }
 .Footer_link{
   display: flex;
+  justify-content: space-around;
   padding: 20px;
 }
 .Footer_link .Nav ul{
@@ -31,22 +18,28 @@ footer{
   flex-wrap: wrap;
   flex-direction: column;
 }
+.Footer_link .Nav ul a{
+  margin: 0;
+}
 .Footer_link h3{
   margin: none;
+  text-align: center;
 }
-.Footer_link .Nav ul li{
-  height: 60px;
-}
-footer .Logo{
-  width: 200px;
+.Footer_news{
+  max-width: 300px;
 }
 .Card_image img{
   height: 50px;
 }
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+
+.Footer_bottom ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.Footer_bottom img{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
 }
