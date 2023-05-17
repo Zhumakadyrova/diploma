@@ -1,5 +1,6 @@
 import "./Services.css";
 import React from "react";
+import Slide from "../components/Swiper/Swiper";
 export default function Services() {
   return (
     <div className="Services">
@@ -94,6 +95,7 @@ export default function Services() {
         </li>
         //{" "}
       </ul>
+      <Slide />
     </div>
     
   );
