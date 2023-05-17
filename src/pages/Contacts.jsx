@@ -1,4 +1,22 @@
+import React, { useState } from "react";
+import Slide from "../components/Swiper/Swiper";
 import "./Contacts.css";
+
+const Dropdown = ({ children }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  return (
+    <>
+      <button className="dropdown-button" onClick={toggleDropdown}></button>
+      {isDropdownOpen && <ul className="dropdown-content">{children}</ul>}
+    </>
+  );
+};
+
 export default function Contacts() {
   return (
     <div className="Contacts">
@@ -8,14 +26,60 @@ export default function Contacts() {
         <p>We only use natural ingredients to make our yummy ice-creams</p>
       </div>
       <div className="Main_details">
-          <li><a href="#"><img src="https://i.pinimg.com/564x/13/5c/4e/135c4ec68ba482ea3e2817b30aaf9efe.jpg" alt="" /> </a></li>
-          <li><a href="#"><img src="https://i.pinimg.com/564x/c1/1c/e6/c11ce6b714d8aaed20161a13d4f59fbc.jpg" alt="" /> </a></li>
-          <li><a href=""><img src="https://i.pinimg.com/236x/76/8d/9a/768d9aea2e2cbb86a28a258bb3adf3c8.jpg" alt="" /> </a></li>
-          <li><a href=""><img src="https://i.pinimg.com/564x/c6/f0/ec/c6f0ec9138a14b8ff15fbb87258beb5a.jpg" alt="" /> </a></li>
-          <li><a href=""><img src="https://i.pinimg.com/564x/28/83/a3/2883a3452d9c69bdf5cd012fa91a8fb8.jpg" alt="" /> </a></li>
-          <li><a href=""><img src="https://i.pinimg.com/564x/6f/09/60/6f09603a55feff6cc4a75602d7d9bed1.jpg" alt="" /> </a></li>
-          <li><a href=""><img src="https://i.pinimg.com/564x/d7/82/77/d78277d7629c355d049595f85e43756c.jpg" alt="" /> </a></li>
-        </div>
+        <li className="first-link">
+          <Dropdown className="back">
+            <li className="back first-link1">
+              <div className="Cart-section">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A9b6995b01d3ddfe5795e602e4fd8ca769031e0dd6e49490a9d98835de199d5ec&amp;source=constructor"
+                  width="328"
+                  height="353"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </li >
+          </Dropdown>
+        </li>
+        <li className="second-link">
+          <Dropdown className="back">
+            <li className="back second-link1">
+              <ul>
+                <li>
+                  <strong>Phone number:</strong> + 996550197557
+                </li>
+                <li>
+                  <strong>Gmail:</strong> zhumakadyrova7@gmail.com
+                </li>
+                <li>
+                  <strong>FQ:</strong> 09467876464
+                </li>
+              </ul>
+            </li>
+          </Dropdown>
+        </li>
+        <li className=" back third-link">
+          <Dropdown className="back">
+            <li className="third-link1"><ul>
+                <li>
+                  <strong><a href="#">Instagram</a></strong>
+                </li>
+                <li>
+                  <strong><a href="#">Instagram</a></strong>
+                </li>
+                <li>
+                  <strong><a href="#">TikTok</a></strong>
+                </li>
+              </ul>
+              </li>
+          </Dropdown>
+        </li>
+        <li className=" back fourth-link">
+          <Dropdown className="back">
+            <li className="fourth-link1"><a href="https://youtu.be/uYFtWVv5F3E" target="_blank">We are in Youtube</a></li>
+          </Dropdown>
+        </li>
+      </div>
+      <Slide />
     </div>
   );
 }
