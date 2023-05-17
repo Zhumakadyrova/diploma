@@ -4,23 +4,25 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 5px;
+  box-shadow: 0 0 5px #f2f2f2;
+  padding: 10px;
 }
-
-h1 {
+.slide{
+  color: white;
+  margin-bottom: 30px;
+}
+.slide h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin: 20px;
 }
 
-p {
+.slide p {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .bg-frame{
-  padding: 30px;
-  box-shadow: 0 0 5px #7a7e7fee;
+  padding: 40px;
+  box-shadow: 0 0 8px #7a7e7fee;
 }
 .image-container img {
   width: 500px;
@@ -34,17 +36,36 @@ p {
   justify-content: center;
 }
 
-button {
+.counter button {
   font-size: 20px;
   padding: 5px 30px;
-  margin: 0 10px;
+  margin: 10px;
   background-color: #00d5ff;
   color: #fff;
   border: none;
-  border-radius: 3px;
   cursor: pointer;
 }
 
 button:hover {
   background-color: #0056b3;
+}
+.image-container {
+  animation: shrink var(--duration) var(--delay) linear infinite;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+:root {
+  --duration: 4s;
+  --delay: 0s;
 }
