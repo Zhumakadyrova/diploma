@@ -10,7 +10,6 @@ export default function Discounts() {
         <p>Tours from 5 USD</p>
         <p>Don' miss your chance. To be a part of our adventures</p>
       </div>
-      <Slide/>
       <div className="Discount_name">
         <div className="Dscount_card">
           <div className="card-image">
