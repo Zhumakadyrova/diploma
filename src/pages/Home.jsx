@@ -1,5 +1,6 @@
 import "./Home.css";
 import React from "react";
+import Slide from "../components/Swiper/Swiper";
 
 export default function Home() {
   return (
@@ -30,7 +31,9 @@ export default function Home() {
             fugit repellendus rem?
           </p>
         </div>
+        
       </div>
+      <Slide />
     </div>
   );
 }

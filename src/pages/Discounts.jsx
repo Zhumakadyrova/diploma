@@ -1,6 +1,7 @@
 import "./Home.css";
 import "./Discounts.css";
 import React from "react";
+import Slide from "../components/Swiper/Swiper";
 export default function Discounts() {
   return (
     <div className="Discounts">
@@ -9,6 +10,7 @@ export default function Discounts() {
         <p>Tours from 5 USD</p>
         <p>Don' miss your chance. To be a part of our adventures</p>
       </div>
+      <Slide/>
       <div className="Discount_name">
         <div className="Dscount_card">
           <div className="card-image">
@@ -73,87 +75,86 @@ export default function Discounts() {
               alt=""
             />
           </div>
-          <div className="card-text">
-            
+          <div className="card-text"></div>
+        </div>
+      </div>
+      <div className="Discount_name_2">
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img
+                src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
+                alt="Avatar"
+              />
+            </div>
+            <div className="flip-card-back">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <span>50$</span> <br />
+              <a href="#"> Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img
+                src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
+                alt="Avatar"
+              />
+            </div>
+            <div className="flip-card-back">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <span>50$</span> <br />
+              <a href="#"> Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img
+                src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
+                alt="Avatar"
+              />
+            </div>
+            <div className="flip-card-back">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <span>50$</span> <br />
+              <a href="#"> Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img
+                src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
+                alt="Avatar"
+              />
+            </div>
+            <div className="flip-card-back">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <span>50$</span> <br />
+              <a href="#"> Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img
+                src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
+                alt="Avatar"
+              />
+            </div>
+            <div className="flip-card-back">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <span>50$</span> <br />
+              <a href="#"> Learn more</a>
+            </div>
           </div>
         </div>
       </div>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
-              alt="Avatar"
-            />
-          </div>
-          <div className="flip-card-back">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
-              alt="Avatar"
-            />
-          </div>
-          <div className="flip-card-back">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
-              alt="Avatar"
-            />
-          </div>
-          <div className="flip-card-back">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
-              alt="Avatar"
-            />
-          </div>
-          <div className="flip-card-back">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-      </div>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img
-              src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
-              alt="Avatar"
-            />
-          </div>
-          <div className="flip-card-back">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-      </div>
-
       <div className="Main_discount">
         <div className="col-6">
           <div className="col-6_content">

@@ -1,5 +1,5 @@
 .Discount_name{
-  margin-top: 400px;
+  margin-top: 300px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -12,7 +12,7 @@ background-color: rgba(255, 255, 255, 0.888);
 color: #7b3633;
 }
 .Main_discount{
-  margin: 50px 0;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -38,7 +38,6 @@ color: #7b3633;
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
-  position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
@@ -57,4 +56,7 @@ color: #7b3633;
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+.Discount_name_2{
+  display: flex;
 }
