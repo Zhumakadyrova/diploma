@@ -11,16 +11,13 @@
 .Main h1{
   padding: 8px 0
 }
-.Main_details{
-  margin-top: 350px;
-  color: wheat;
-}
+
 .Cntct{
   display: flex;
   justify-content: center;
 }
 .Cnct_link{
-  margin-top: 150px;
+  margin-top: 50px;
   background: linear-gradient(-45deg, #ee7652a1, #c6f6f65a, #a523d577, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
@@ -32,7 +29,7 @@
   display: flex;
   height: 400px;
   justify-content: baseline;
-  margin: 100px;
+  margin: 150px 100px 100px;
 }
 .Home_content{
   height: 400px;
@@ -41,8 +38,17 @@
   margin: 0 30px;
 }
 .Home_content__text{
-background-color: white;
+color: white;
 height: 400px;
+box-shadow: 0 0 8px #7a7e7fee;
+text-align: center;
+}
+.Home_content__text p{
+  padding: 20px 50px;
+  line-height: 35px;
+}
+.Home_content__text h2{
+  padding: 20px 50px;
 }
 
 @keyframes gradient {
