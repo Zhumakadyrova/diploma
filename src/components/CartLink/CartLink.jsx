@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import "./CartLink.css";
+import cartPhoto from "../../assets/pages_photo/cart-image.jpg";
 
 export default function CartLink() {
   const { cart } = useContext(AppContext);
@@ -13,7 +14,7 @@ export default function CartLink() {
       <Link to="/cart">
         {<span className="CartLink-total">{total}</span>}
         <img
-          src="https://images.freeimages.com/images/previews/759/blue-website-buttons-2-2-1145509.jpg"
+          src={cartPhoto}
           className="Cart-pctr"
         />
       </Link>
