@@ -1,6 +1,7 @@
 .CartLink{
   position: relative;
   max-width: 200px;
+  left: 110px;
 }
 .CartLink-total {
   color: white;
@@ -12,12 +13,12 @@
   float: right;
   text-decoration: none;
   position: absolute;
-  right: 120px;
+  left: 20px;
   top: -6px;
-  margin-right: 15px;
+  
 }
 .CartLink img {
   height: 35px;
-  width: 35px;
-  margin-right: 140px;
+  width: 45px;
+
 }
