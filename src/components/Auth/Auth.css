@@ -1,5 +1,6 @@
 .Auth {
   margin-left: 25px;
+  width: 80px;
 }
 /* button {
   transition: 0.3s ease;
@@ -11,18 +12,17 @@
   background-color: rgb(104, 213, 14);
   color: white;
   font-weight: bold;
-  max-width: 50px;
 }
 .Logout button {
   background-color: red;
   color: white;
   font-weight: bold;
-  margin-left: 0px;
 }
 
-.Logout img{
+.Login img{
   border-radius: 50%;
   z-index: 1;
+  height: 50px;
 }
 .OrderLink{
   color: rgb(32, 4, 4);
@@ -32,6 +32,8 @@
 .Login {
   width: 230px;
 }
-.OrderLink img {
-  height: 60px;
+.OrderLink img{
+  width: 70px;
+  height: 70px;
 }
+
