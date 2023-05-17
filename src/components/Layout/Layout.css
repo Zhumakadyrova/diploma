@@ -35,10 +35,6 @@
   background-color: black;
   min-height: 1500px;
 }
-.CartAuth{
-  display: flex;
-  justify-content: center;
-}
 
 .video{
   position: absolute;

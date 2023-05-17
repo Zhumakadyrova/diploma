@@ -23,10 +23,10 @@ export default function Layout(props) {
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
-        <div className="CartAuth">
-          <CartLink />
-          <Auth />
-        </div>
+        <CartLink />
+        
+        <Auth />
+        
         
        
       </header>
