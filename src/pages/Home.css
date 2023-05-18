@@ -65,8 +65,26 @@ text-align: center;
 	}
 }
 
-.Cnct_link a{
+.Cnct_link {
+  position: relative;
+  display: inline-block;
+}
+
+.Cnct_link a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   color: black;
   font-weight: 500;
+  transition: font-size 1s;
+}
+
+.Cnct_link:hover a {
+  transform: scale(1.5);
+}
+
+.Cnct_text {
+  font-size: 16px;
+  transform-origin: top;
+  transition: transform 1s;
 }

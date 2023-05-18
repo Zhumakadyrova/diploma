@@ -12,8 +12,8 @@ export default function Home() {
       </div>
       <div className="Cntct">
         <div className="Cnct_link">
-          <a href="./Contacts.jsx" className="Cnct_link">
-            Contact us{" "}
+          <a href="./Contacts.jsx">
+            <span className="Cnct_text">Contact us</span>
           </a>
         </div>
       </div>
