@@ -1,7 +1,6 @@
 import "./Home.css";
 import "./Discounts.css";
 import React from "react";
-import Slide from "../components/Swiper/Swiper";
 export default function Discounts() {
   return (
     <div className="Discounts">
@@ -66,16 +65,6 @@ export default function Discounts() {
             <a href="#"> Learn more</a>
           </div>
         </div>
-        <div className="Discount_card">
-          <div className="card-image">
-            {" "}
-            <img
-              src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
-              alt=""
-            />
-          </div>
-          <div className="card-text"></div>
-        </div>
       </div>
       <div className="Discount_name_2">
         <div className="flip-card">
@@ -86,22 +75,7 @@ export default function Discounts() {
                 alt="Avatar"
               />
             </div>
-            <div className="flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
-              <span>50$</span> <br />
-              <a href="#"> Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <img
-                src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
-                alt="Avatar"
-              />
-            </div>
-            <div className="flip-card-back">
+            <div className=" flip-card-back">
               <p>Lorem ipsum dolor sit amet.</p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
