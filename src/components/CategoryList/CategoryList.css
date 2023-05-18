@@ -35,10 +35,10 @@
   z-index: 10; 
   color: #000; 
   transition: 20s ease all;
+  margin: 0 0 0 -15px!important;
 }
 .CategoryList li:hover .subcategory {
   display: block;
-  margin: 0;
   transform: translateX(7px);
   width: 150px;
 }
