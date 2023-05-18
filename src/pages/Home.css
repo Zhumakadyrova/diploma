@@ -35,7 +35,9 @@
   height: 400px;
   width: 500px;
   background-image: url(src/assets/pages_photo/reservation-photo.jpg);
+  background-size: contain;
   margin: 0 30px;
+  text-align: center;
 }
 .Home_content__text{
 color: white;

@@ -19,11 +19,10 @@ export default function Home() {
       </div>
       <div className="Home_info">
         <div className="Home_content">
-          <h3>Best travel agency</h3>
-          <h2>Explore the world</h2>
+          <h2>Explore the world with us.</h2>
         </div>
         <div className="Home_content__text">
-          <h2>About us</h2>
+          <h2>Our rules</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             vero saepe obcaecati quis non delectus qui animi mollitia sapiente
