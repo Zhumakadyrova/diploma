@@ -41,11 +41,11 @@ export default function Contacts() {
           </Dropdown>
         </li>
         <li className="second-link">
-          <Dropdown className="back">
+          <Dropdown >
             <li className="back second-link1">
-              <ul>
+              <p><ul>
                 <li>
-                  <strong>Phone number:</strong> + 996550197557
+                  <strong>Phone number:</strong>+996550197557
                 </li>
                 <li>
                   <strong>Gmail:</strong> zhumakadyrova7@gmail.com
@@ -54,12 +54,15 @@ export default function Contacts() {
                   <strong>FQ:</strong> 09467876464
                 </li>
               </ul>
+              </p>
+              
             </li>
           </Dropdown>
         </li>
         <li className=" back third-link">
-          <Dropdown className="back">
-            <li className="third-link1"><ul>
+          <Dropdown>
+            <li className="third-link1">
+              <p><ul>
                 <li>
                   <strong><a href="#">Instagram</a></strong>
                 </li>
@@ -69,13 +72,15 @@ export default function Contacts() {
                 <li>
                   <strong><a href="#">TikTok</a></strong>
                 </li>
-              </ul>
+              </ul></p>
+              
               </li>
           </Dropdown>
         </li>
         <li className=" back fourth-link">
-          <Dropdown className="back">
-            <li className="fourth-link1"><a href="https://youtu.be/uYFtWVv5F3E" target="_blank">We are in Youtube</a></li>
+          <Dropdown>
+            <li className="fourth-link1">
+              <p><a href="https://youtu.be/uYFtWVv5F3E" target="_blank">We are in Youtube</a></p></li>
           </Dropdown>
         </li>
       </div>

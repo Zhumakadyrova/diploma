@@ -31,7 +31,15 @@
 box-shadow: 0 0 5px rgba(128, 128, 128, 0.068);
 }
 
-
+.back p{
+  margin-top: 50px;
+  width: 220px;
+  box-shadow: 0 0 8px #7a7e7fee;
+}
+.back p a{
+  color: white;
+  text-decoration: none;
+}
 .Main_details li{
   list-style-type: none;
 }
