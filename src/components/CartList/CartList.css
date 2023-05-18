@@ -1,12 +1,36 @@
-.CartList {
+.CartList .CartItem {
   padding: 15px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  width: 800px;
+  margin: 0 auto;
   
+}
+.CartItem{  
+  background-color: rgba(235, 235, 235, 0.548);
+}
+.CartItem a{
+  width: 300px;
+  padding-right: 20px;
+  color: brown;
+  text-decoration: none;
+}
+.CartItem span{
+  width: 100px;
+}
+.CartItem input{
+  align-items: center;
+  width: 40px;
+  text-align: center;
+  margin-right: 50px;
 }
 
 .CartList .CartItem img {
-  max-width: 80px;
+  max-width: 150px;
+  margin-right: 20px;
+}
 
+.CartItem button{
+  align-items: flex-end;
 }
