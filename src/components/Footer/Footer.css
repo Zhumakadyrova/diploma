@@ -32,9 +32,11 @@ footer .Logo{
   max-width: 300px;
 }
 .Card_image img{
-  height: 50px;
+  width: 100px;
 }
-
+.Footer_card_1{
+  display: flex;
+}
 
 .Footer_bottom ul{
   display: flex;
