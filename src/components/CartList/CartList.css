@@ -2,6 +2,7 @@
   padding: 15px 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   width: 800px;
   margin: 0 auto;
@@ -13,9 +14,13 @@
 .CartItem a{
   width: 300px;
   padding-right: 20px;
-  color: brown;
   text-decoration: none;
+  color: black;
 }
+.CartItem a:hover{
+  text-shadow:  0 0 8px; 
+}
+
 .CartItem span{
   width: 100px;
 }
@@ -33,4 +38,6 @@
 
 .CartItem button{
   align-items: flex-end;
+  cursor: pointer;
+  margin-left: 35px;
 }
