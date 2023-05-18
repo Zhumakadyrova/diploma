@@ -3,7 +3,7 @@ import "./Swiper.css";
 
 const Slide = () => {
   const [counter, setCounter] = useState(0);
-  const images = ['public/images/1st.jpg', 'public/images/2nd.jpg', 'public/images/3rd.jpg', 'public/images/5th.jpg'];
+  const images = ['src/assets/slide_photo/1st.jpg', 'src/assets/slide_photo/2nd.jpg', 'src/assets/slide_photo/3rd.jpg', 'src/assets/slide_photo/4th.jpg', "src/assets/slide_photo/5th.jpg", "src/assets/slide_photo/6th.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
