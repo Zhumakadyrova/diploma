@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import "./Swiper.css";
+import img1 from "../../assets/slide_photo/1st.jpg";
+import img2 from "../../assets/slide_photo/2nd.jpg";
+import img3 from "../../assets/slide_photo/3rd.jpg";
+import img4 from "../../assets/slide_photo/4th.jpg";
+import img5 from "../../assets/slide_photo/5th.jpg";
 
 const Slide = () => {
   const [counter, setCounter] = useState(0);
-  const images = ['src/assets/slide_photo/1st.jpg', 'src/assets/slide_photo/2nd.jpg', 'src/assets/slide_photo/3rd.jpg', 'src/assets/slide_photo/4th.jpg', "src/assets/slide_photo/5th.jpg", "src/assets/slide_photo/6th.jpg"];
+  const images = ["https://i.pinimg.com/564x/60/88/ec/6088ec1a0b9af7edfd275e9984c214cb.jpg", img2, img3, img4, img5 ];
 
   useEffect(() => {
     const interval = setInterval(() => {
