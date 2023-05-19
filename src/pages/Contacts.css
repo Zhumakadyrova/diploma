@@ -11,27 +11,27 @@
   border-radius: 50px;
 }
 .Main_details .first-link {
-  background-image: url(src/assets/contacts_icons/location.jpg);
+  background-image: url(https://i.pinimg.com/564x/19/d6/4a/19d64a921d27cef179ffb1c1960c9257.jpg);
   background-size: contain;
 }
 
 .Main_details .second-link {
-  background-image: url(src/assets/contacts_icons/contacts.jpg);
+  background-image: url(https://i.pinimg.com/564x/f5/be/33/f5be3307a40868a80821729e9e5ae7cd.jpg);
   background-size: contain;
 }
 
 .Main_details .third-link {
-  background-image: url(src/assets/contacts_icons/social_media.jpg);
+  background-image: url(https://i.pinimg.com/236x/ed/03/79/ed0379a80af42778aae62c3d9beb2613.jpg);
   background-size: contain;
 }
 
 .Main_details .fourth-link {
-  background-image: url(src/assets/contacts_icons/youTube.jpg);
+  background-image: url(https://i.pinimg.com/736x/73/ba/0d/73ba0d454fda31d63d916596d2c2b928.jpg);
   background-size: contain;
 }
 
 .Main-details .back {
-  box-shadow: 0 0 5px rgba(128, 128, 128, 0.068);
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0);
 }
 
 .back p {
