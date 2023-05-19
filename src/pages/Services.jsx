@@ -16,34 +16,34 @@ export default function Services() {
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
           <div className="col-8">
-            <p>About</p>
+            <a href="#">About</a>
           </div>
         </div>
         <div className="question_row">
           <div className="col-4">
             <h5>snflnf</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor </p>
           </div>
           <div className="col-8">
-            <p>About</p>
+            <a href="#">About</a>
           </div>
         </div>
         <div className="question_row">
           <div className="col-4">
             <h5>snflnf</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor </p>
           </div>
           <div className="col-8">
-            <p>About</p>
+           <a href="#">About</a>
           </div>
         </div>
         <div className="question_row">
           <div className="col-4">
             <h5>snflnf</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor</p>
           </div>
           <div className="col-8">
-            <p>About</p>
+            <a href="#">About</a>
           </div>
         </div>
       </div>
