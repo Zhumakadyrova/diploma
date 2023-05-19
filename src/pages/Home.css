@@ -34,10 +34,15 @@
 .Home_content{
   height: 400px;
   width: 500px;
-  background-image: url(src/assets/pages_photo/reservation-photo.jpg);
+  background-image: url(https://i.pinimg.com/564x/1b/da/74/1bda749efb611e53ae31d818cbd7f706.jpg);
   background-size: contain;
   margin: 0 30px;
   text-align: center;
+  box-shadow: 0 0 8px #7a7e7fee;
+}
+.Home_content h2{
+color: white;
+padding: 20px 0;
 }
 .Home_content__text{
 color: white;
