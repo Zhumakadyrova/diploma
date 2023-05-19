@@ -8,7 +8,7 @@ import img5 from "../../assets/slide_photo/5th.jpg";
 
 const Slide = () => {
   const [counter, setCounter] = useState(0);
-  const images = ["https://i.pinimg.com/564x/60/88/ec/6088ec1a0b9af7edfd275e9984c214cb.jpg", img2, img3, img4, img5 ];
+  const images = ["https://i.pinimg.com/564x/60/88/ec/6088ec1a0b9af7edfd275e9984c214cb.jpg", img1, img2, img3, img4, img5 ];
 
   useEffect(() => {
     const interval = setInterval(() => {
