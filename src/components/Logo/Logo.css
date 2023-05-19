@@ -1,6 +1,6 @@
 .Logo img {
-  width: 90px;
+  width: 120px;
   border-radius: 0px;
   margin: 0 15px;
-  background-color: transparent;
+  background-color: transparent !important;
 }
