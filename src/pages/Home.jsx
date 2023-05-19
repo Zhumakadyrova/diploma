@@ -1,6 +1,8 @@
 import "./Home.css";
 import React from "react";
 import Slide from "../components/Swiper/Swiper";
+import contacts from "../pages//Contacts";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -12,9 +14,9 @@ export default function Home() {
       </div>
       <div className="Cntct">
         <div className="Cnct_link">
-          <a href="./Contacts.jsx">
+          <Link to="contacts">
             <span className="Cnct_text">Contact us</span>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="Home_info">
