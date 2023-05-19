@@ -48,7 +48,6 @@ export default function Services() {
         </div>
       </div>
       <ul>
-        //{" "}
         <li>
           <a href="#">
             <img
@@ -57,7 +56,6 @@ export default function Services() {
             />
           </a>
         </li>
-        //{" "}
         <li>
           <a href="#">
             <img
@@ -66,7 +64,6 @@ export default function Services() {
             />
           </a>
         </li>
-        //{" "}
         <li>
           <a href="#">
             <img
@@ -75,7 +72,6 @@ export default function Services() {
             />
           </a>
         </li>
-        //{" "}
         <li>
           <a href="#">
             <img
@@ -84,7 +80,6 @@ export default function Services() {
             />
           </a>
         </li>
-        //{" "}
         <li>
           <a href="#">
             <img
@@ -93,7 +88,6 @@ export default function Services() {
             />
           </a>
         </li>
-        //{" "}
       </ul>
       <Slide />
     </div>

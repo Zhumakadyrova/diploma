@@ -17,6 +17,7 @@
   background-color: red;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .Login img{
