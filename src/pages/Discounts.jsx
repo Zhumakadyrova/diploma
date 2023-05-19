@@ -66,7 +66,7 @@ export default function Discounts() {
           </div>
         </div>
       </div> */}
-      <div className="Discount_name_2_1">
+      <div className="row Discount_name_2">
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">

@@ -1,4 +1,4 @@
-.Discount_name_2_1 {
+.row.Discount_name_2  {
   margin-top: 350px;
   display: flex;
   justify-content: space-evenly;
@@ -88,6 +88,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  box-shadow: 0 0 8px #7a7e7fee;
 }
 
 /* Style the front side */
@@ -101,6 +102,7 @@
   transform: rotateY(180deg);
   background-color: rgba(255, 255, 255, 0.888);
   color: white;
+  box-shadow: 0 0 8px #7a7e7fee;
 }
 .flip-card-back a{
   color: white;
