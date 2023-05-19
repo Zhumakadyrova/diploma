@@ -1,11 +1,11 @@
-.Main_details{
+.Main_details {
   margin-top: 300px;
   display: flex;
   justify-content: space-around;
   color: white;
   height: 250px;
 }
-.Main_details li{
+.Main_details li {
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -14,32 +14,52 @@
   background-image: url(src/assets/contacts_icons/location.jpg);
   background-size: contain;
 }
+
 .Main_details .second-link {
   background-image: url(src/assets/contacts_icons/contacts.jpg);
   background-size: contain;
-
 }
+
 .Main_details .third-link {
   background-image: url(src/assets/contacts_icons/social_media.jpg);
   background-size: contain;
 }
+
 .Main_details .fourth-link {
   background-image: url(src/assets/contacts_icons/youTube.jpg);
   background-size: contain;
 }
-.Main-details .back   {
-box-shadow: 0 0 5px rgba(128, 128, 128, 0.068);
+
+.Main-details .back {
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.068);
 }
 
-.back p{
+.back p {
   margin-top: 50px;
   width: 220px;
   box-shadow: 0 0 8px #7a7e7fee;
 }
-.back p a{
+
+.back p a {
   color: white;
   text-decoration: none;
 }
-.Main_details li{
+
+.Main_details li {
   list-style-type: none;
+}
+
+.Main-details li .back {
+  width: 50px;
+  height: 150px;
+  cursor: pointer;
+}
+.dropdown-button{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dropdown-button:hover{
+  display: none;
 }
