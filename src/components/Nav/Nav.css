@@ -17,8 +17,7 @@
   font-size: 15px;
 }
 .Nav a:hover {
-  color: rgba(28, 12, 12, 0.462);
-  text-shadow: 0 0 1px;
+  text-shadow: 0 0 5px black;
 }
 .Nav a:focus {
   color: #7b3633;
