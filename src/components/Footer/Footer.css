@@ -21,6 +21,7 @@ footer .Logo{
 }
 .Footer_link .Nav ul a{
   margin: 0;
+  align-items: center;
 }
 .Footer_link h3{
   margin: 20px 0;
@@ -38,6 +39,9 @@ footer .Logo{
 .Footer_card_1{
   display: flex;
 }
+.Footer_card_1:hover{
+  box-shadow: 0 0 8px #7a7e7fee;
+}
 .Footer_bottom{
   margin: 0;
   box-shadow: 0 10px 8px #7a7e7fa1;
@@ -52,4 +56,13 @@ footer .Logo{
   height: 30px;
   width: 30px;
   margin: 10px;
+}
+.footer_contacts a{
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+  line-height: 30px;
+}
+.footer_contacts a:hover{
+  text-shadow: 0 0 5px black;
 }
