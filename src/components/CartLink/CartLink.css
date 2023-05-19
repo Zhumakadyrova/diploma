@@ -20,5 +20,5 @@
 .CartLink img {
   height: 35px;
   width: 45px;
-
+  background-color: transparent !important; 
 }
