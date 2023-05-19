@@ -1,5 +1,5 @@
 .Footer{
-  margin: 0 30px;
+  margin: 0;
 }
 footer {
   width: 100%;
@@ -32,12 +32,17 @@ footer .Logo{
   max-width: 300px;
 }
 .Card_image img{
-  width: 100px;
+  width: 70px;
+  margin: 5px;
 }
 .Footer_card_1{
   display: flex;
 }
-
+.Footer_bottom{
+  margin: 0;
+  box-shadow: 0 10px 8px #7a7e7fa1;
+  background-color: rgba(207, 201, 201, 0.53);
+}
 .Footer_bottom ul{
   display: flex;
   justify-content: center;

@@ -22,7 +22,7 @@ export default function Footer(Footer) {
           <div className="Footer_card">
             <div className="Footer_card_1">
               <div className="Card_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet 
                 Blanditiis, id officiis. <br />
                 <span>19.06.2023</span>
               </div>
@@ -32,8 +32,8 @@ export default function Footer(Footer) {
             </div>
             <div className="Footer_card_1">
               <div className="Card_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis, id officiis.
+                Lorem ipsum dolor sit
+                Blanditiis, id officiis. <br />
                 <span>19.06.2023</span>
               </div>
               <div className="Card_image">
