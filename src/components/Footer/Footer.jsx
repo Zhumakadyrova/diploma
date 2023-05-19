@@ -44,8 +44,8 @@ export default function Footer(Footer) {
         </div>
         <div className="footer_contacts">
           <h3>Contact us</h3>
-          <p>zhumakadyrova9@gmail.com</p>
-          <p>+996550197557</p>
+          <a href="mailto:zhumakadyrova7@gmail.com">zhumakadyrova7@gmail.com</a> <br />
+          <a href="tel:+996550197557">+996550197557</a>
         </div>
       </div>
       <div className="Footer_bottom">
