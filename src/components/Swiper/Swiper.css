@@ -6,6 +6,7 @@
   text-align: center;
   box-shadow: 0 0 5px #f2f2f2;
   padding: 10px;
+  
 }
 .slide{
   color: white;
@@ -14,6 +15,7 @@
 .slide h2 {
   font-size: 24px;
   margin: 20px;
+  z-index: -10;
 }
 
 .slide p {
@@ -23,6 +25,7 @@
 .bg-frame{
   padding: 40px;
   box-shadow: 0 0 8px #7a7e7fee;
+  z-index: -10;
 }
 .image-container img {
   width: 500px;
