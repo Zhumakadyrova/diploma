@@ -45,10 +45,10 @@ export default function Contacts() {
             <li className="back second-link1 dropdown-content">
               <p><ul>
                 <li>
-                  <strong>Phone number:</strong>+996550197557
+                  <strong>Phone number: <br /> </strong><a href="tel:">+996550197557</a>
                 </li>
                 <li>
-                  <strong>Gmail:</strong> zhumakadyrova7@gmail.com
+                  <strong>Gmail:</strong><br /><a href="mail:">zhumakadyrova7@gmail.com</a> 
                 </li>
                 <li>
                   <strong>FQ:</strong> 09467876464
@@ -80,7 +80,7 @@ export default function Contacts() {
         <li className=" back fourth-link">
           <Dropdown>
             <li className="fourth-link1 dropdown-content">
-              <p><a href="https://youtu.be/uYFtWVv5F3E" target="_blank">We are in Youtube</a></p></li>
+              <p><a href="https://youtu.be/uYFtWVv5F3E" target="_blank"> <strong>We are in Youtube</strong></a></p></li>
           </Dropdown>
         </li>
       </div>
