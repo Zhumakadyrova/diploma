@@ -76,7 +76,7 @@ export default function Discounts() {
               />
             </div>
             <div className=" flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit</p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
             </div>
@@ -91,7 +91,7 @@ export default function Discounts() {
               />
             </div>
             <div className="flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
             </div>
@@ -106,7 +106,7 @@ export default function Discounts() {
               />
             </div>
             <div className="flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
             </div>
@@ -121,7 +121,7 @@ export default function Discounts() {
               />
             </div>
             <div className="flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
             </div>
@@ -138,7 +138,7 @@ export default function Discounts() {
               />
             </div>
             <div className=" flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
             </div>
@@ -153,7 +153,7 @@ export default function Discounts() {
               />
             </div>
             <div className="flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
             </div>
@@ -168,7 +168,7 @@ export default function Discounts() {
               />
             </div>
             <div className="flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
             </div>
@@ -183,7 +183,7 @@ export default function Discounts() {
               />
             </div>
             <div className="flip-card-back">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
               <a href="#"> Learn more</a>
             </div>
