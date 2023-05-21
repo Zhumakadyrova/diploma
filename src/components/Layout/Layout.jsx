@@ -28,7 +28,7 @@ export default function Layout(props) {
         <Auth />
         
         
-       
+        
       </header>
       <aside>
         <CategoryList />
