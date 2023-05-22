@@ -10,7 +10,7 @@ export default function Product() {
   const { products } = useContext(AppContext);
 
   const product = products.find((product) => product.path === params.path);
-
+  
   if (!product) {
     return <NotFound />;
   }
