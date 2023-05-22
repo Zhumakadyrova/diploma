@@ -1,10 +1,9 @@
 import { addDoc } from "firebase/firestore";
 import "./OrderForm.css";
-import { logIn, orderCollection } from "../../firebase";
+import { orderCollection } from "../../firebase";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { useNavigate } from "react-router-dom";
-
 
 export default function OrderForm() {
   const { cart, setCart, user } = useContext(AppContext);
@@ -35,7 +34,7 @@ export default function OrderForm() {
   }
 
   if (!user) {
-    return "Please login"
+    return "Please login";
   }
 
   return (

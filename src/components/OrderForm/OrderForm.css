@@ -1,16 +1,6 @@
-.OrderForm {
-  margin: 20px;
-  max-width: 200px;
-  padding: 10px;
-  float: right;
-  background-color: aliceblue;
-  border: 1px solid rgb(226, 238, 249);
-}
 .OrderForm form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-button {
-  margin-top: 15px;
+  color: aqua;
 }
