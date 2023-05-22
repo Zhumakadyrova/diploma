@@ -25,10 +25,10 @@ export default function OrderList() {
 
     return (
       <div className="Order">
-        <div><strong>Name:</strong>{order.name}</div>
-        <div><strong>Phone:</strong> {order.phone}</div>
-        <div><strong>Address:</strong>{order.address}</div>
-        <div><strong>Cart:</strong>{cart}</div>
+        <div><strong>Name</strong>: {order.name}</div>
+        <div><strong>Phone</strong>: {order.phone}</div>
+        <div><strong>Address</strong>: {order.address}</div>
+        <div><strong>Cart</strong>: {cart}</div>
       </div>
     );
   });
