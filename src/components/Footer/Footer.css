@@ -24,7 +24,7 @@ footer .Logo{
   
 }
 .Footer_link h3{
-  margin: 20px 0;
+  margin: 20px 15px 20px 0;
 }
 .Footer_link h3{
   text-align: center;
@@ -33,6 +33,7 @@ footer .Logo{
   max-width: 300px;
 }
 .Card_image img{
+  height: 70px;
   width: 70px;
   margin: 5px;
 }
@@ -44,8 +45,8 @@ footer .Logo{
 }
 .Footer_bottom{
   margin: 0;
-  box-shadow: 0 10px 8px #7a7e7fa1;
-  background-color: rgba(207, 201, 201, 0.53);
+  box-shadow: 0 10px 8px #7a7e7f7b;
+  background-color: rgba(207, 201, 201, 0.271);
 }
 .Footer_bottom ul{
   display: flex;

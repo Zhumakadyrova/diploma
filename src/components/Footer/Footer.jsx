@@ -2,6 +2,7 @@ import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import "./Footer.css";
 import footer_image from "../../assets/pages_photo/footer_img.jpg";
+import footer_image2 from "../../assets/pages_photo/footer_img2.jpg";
 import s_media_instagram from "../../assets/contacts_icons/instagram.jpg";
 import s_media_facebook from "../../assets/contacts_icons/facebook.jpg";
 import s_media_tiktok from "../../assets/contacts_icons/tiktok.jpg";
@@ -38,7 +39,7 @@ export default function Footer(Footer) {
                 <span>19.06.2023</span>
               </div>
               <div className="Card_image">
-                <img src={footer_image} alt="" />
+                <img src={footer_image2} alt="" />
               </div>
             </div>
           </div>
