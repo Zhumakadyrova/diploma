@@ -21,9 +21,15 @@ export default function CategoryList() {
   const output = categories.map((category) => {
     const relatedProducts = products.filter((product) => product.category === category.id);
     const relatedProductList = relatedProducts.map((product) => (
-      <li key={product.id}>
+      <div className="NavLink">
+              <li key={product.id}>
+        
         <NavLink to={"/product/" + product.path}>{product.name}</NavLink>
+      
+        
       </li>
+      </div>
+
     ));
     
     const showSubcategory = showSubcategories[category.id];
@@ -53,9 +59,12 @@ export default function CategoryList() {
 
   return (
     <div className="CategoryList">
+      <div className="drop">
       <ul id="dropdown" className="dropdownContent" style={{ transitionDelay: `${dropdownDelay}ms` }}>
         {output}
       </ul>
+      </div>
+      
       <AddCategory />
     </div>
   );
