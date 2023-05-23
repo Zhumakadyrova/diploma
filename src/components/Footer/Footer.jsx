@@ -48,6 +48,10 @@ export default function Footer(Footer) {
           <h3>Contact us</h3>
           <a href="mailto:zhumakadyrova7@gmail.com" target="_blank">zhumakadyrova7@gmail.com</a> <br />
           <a href="tel:+996550197557" target="_blank">+996550197557</a>
+          <div className="input">
+           <input type="text" value= ""/>
+           <button>Search</button>
+          </div>
         </div>
       </div>
       <div className="Footer_bottom">
