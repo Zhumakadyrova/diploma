@@ -3,11 +3,10 @@
   background-color: black;
   max-width: 400px;
   max-height: 300px;
-  padding: 20px 30px;
   box-shadow: 0 0 8px #7a7e7fee;
 }
 .AddProduct label{
-  color: black;
+  color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,11 +16,16 @@
   margin: 0 40%;
 }
 .AddProduct form{
-  padding: 10px;
+  padding: 20px 10px;
   display: block;
   box-shadow: 0 0 8px #7a7e7fee;
-  background-color: rgba(213, 210, 210, 0.649);
+  max-width: 220px;
+  background-color: rgba(0, 0, 0, 0.679);
+}
+.AddProduct form input{
+  margin-top: 5px;
 }
 .AddProduct h3{
   text-align: center;
+  color: white;
 }
