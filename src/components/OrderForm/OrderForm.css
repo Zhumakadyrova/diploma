@@ -1,6 +1,14 @@
 .OrderForm form {
   display: flex;
   flex-direction: column;
+  margin: 10px auto;
+  padding: 20px ;
   align-items: center;
   color: white;
+  box-shadow: 0 0 8px #7a7e7fee;
+  max-width: 220px;
+  background-color: rgba(0, 0, 0, 0.679);
+}
+.OrderForm label{
+  margin: 5px 0;
 }
