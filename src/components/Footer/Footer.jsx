@@ -26,7 +26,8 @@ export default function Footer(Footer) {
               <div className="Card_text">
                 Lorem ipsum dolor sit amet 
                 Blanditiis, id officiis. <br />
-                <span>19.06.2023</span>
+                <a href="https://www.advantour.com/kyrgyzstan/tourism.htm" target="blank"><span>19.06.2023</span></a>
+
               </div>
               <div className="Card_image">
                 <img src={footer_image} alt="" />
@@ -36,7 +37,7 @@ export default function Footer(Footer) {
               <div className="Card_text">
                 Lorem ipsum dolor sit
                 Blanditiis, id officiis. <br />
-                <span>19.06.2023</span>
+                <a href="https://www.advantour.com/kyrgyzstan/tourism.htm" target="blank"><span>19.06.2023</span></a>
               </div>
               <div className="Card_image">
                 <img src={footer_image2} alt="" />
@@ -49,7 +50,7 @@ export default function Footer(Footer) {
           <a href="mailto:zhumakadyrova7@gmail.com" target="_blank">zhumakadyrova7@gmail.com</a> <br />
           <a href="tel:+996550197557" target="_blank">+996550197557</a>
           <div className="input">
-           <input type="text" value= ""/>
+           <input type="text" placeholder = " Search..."/>
            <button>Search</button>
           </div>
         </div>
