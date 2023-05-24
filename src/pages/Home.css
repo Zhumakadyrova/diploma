@@ -80,12 +80,13 @@ text-align: center;
   display: inline-block;
   text-decoration: none;
   color: black;
-  font-weight: 500;
-  transition: font-size 1s;
+  font-weight: 600;
+  scale: 1.5;
+  transition:  1.5s;
 }
 
 .Cnct_link:hover a {
-  transform: scale(1.5);
+  scale:2;
 }
 
 .Cnct_text {
