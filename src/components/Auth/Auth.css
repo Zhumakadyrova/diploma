@@ -25,6 +25,11 @@
   z-index: 1;
   height: 50px;
 }
+.Logout img{
+  border-radius: 50%;
+  z-index: 1;
+  height: 50px;
+}
 .OrderLink{
   color: rgb(32, 4, 4);
   text-decoration: none;
