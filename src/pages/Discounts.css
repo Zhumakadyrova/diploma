@@ -19,8 +19,11 @@
   opacity: 5.75;
   background-size: contain;
   background-repeat: no-repeat;
-  color: #7b3633;
-  padding: 170px 7px 0;
+  color: #4f201d;
+  padding: 180px 7px 0;
+}
+.Discount_name_2 .flip-card-back p{
+  font-weight: 700;
 }
 .Discount_name_2 .flip-card-back a {
   text-decoration: none;
