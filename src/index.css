@@ -11,4 +11,11 @@ body {
 }
 input{
   outline: none;
+  padding: 0 5px;
+}
+a{
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
 }
