@@ -41,7 +41,7 @@
   margin: 25px;
   color: white;
   box-shadow: 0 0 8px #7a7e7fee;
-  width: 100%;
+  width: 85%;
   text-align: center;
   transform: scale(1);
   transition: 1s;
@@ -50,7 +50,7 @@
   transform: scale(1.2);
 }
 .Main_discount .col-6_content h3{
-  padding-top: 100px;
+  padding-top: 80px;
   margin: 15px;
 }
 .Main_discount .col-6 a {
@@ -67,6 +67,7 @@
   width: 100%;
   display: block;
 }
+
 
 /* This container is needed to position the front and back side */
 .flip-card {

@@ -1,6 +1,8 @@
 import "./Home.css";
 import "./Discounts.css";
 import React from "react";
+import { Link } from "react-router-dom";
+
 export default function Discounts() {
   return (
     <div className="Discounts">
@@ -139,15 +141,20 @@ export default function Discounts() {
           <div className="col-6_content">
             <h3>Discount of the month</h3>
             <h5>Do you want to go to the round trip?</h5>
-            <a href="#">Contact us</a>
+            <Link to="/contacts">Contact us</Link>
           </div>
         </div>
-        <div className="col-6">
+        
+          <Link to="/product/rukh-ordo">
+          <div className="col-6">
           <img
             src="https://i.pinimg.com/564x/91/cf/42/91cf4253d596ee9b523086536f468c07.jpg"
             alt=""
           />
-        </div>
+          </div>
+          </Link>
+          
+        
       </div>
     </div>
   );
