@@ -33,25 +33,17 @@
   margin-bottom: 20px;
 }
 
-.counter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.counter button {
-  font-size: 20px;
-  padding: 5px 30px;
+
+.slide button {
+  font-size: 15px;
+  padding: 5px 10px;
+  width: 70px;
   margin: 10px;
-  background-color: #00d5ff;
   color: #fff;
   border: none;
-  cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
 .image-container {
   animation: shrink var(--duration) var(--delay) linear infinite;
 }
@@ -69,6 +61,6 @@ button:hover {
 }
 
 :root {
-  --duration: 4s;
+  --duration: 5s;
   --delay: 0s;
 }
