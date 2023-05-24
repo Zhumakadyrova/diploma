@@ -1,6 +1,7 @@
 import "./Services.css";
 import React from "react";
 import Slide from "../components/Swiper/Swiper";
+import { Link } from "react-router-dom";
 export default function Services() {
   return (
     <div className="Services">
@@ -16,7 +17,7 @@ export default function Services() {
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
           <div className="col-8">
-            <a href="#">About</a>
+          <Link to="/category/horse-riding">About</Link>
           </div>
         </div>
         <div className="question_row">
@@ -25,7 +26,7 @@ export default function Services() {
             <p>Lorem ipsum dolor </p>
           </div>
           <div className="col-8">
-            <a href="#">About</a>
+          <Link to="/category/ticket">About</Link>
           </div>
         </div>
         <div className="question_row">
@@ -34,7 +35,7 @@ export default function Services() {
             <p>Lorem ipsum dolor </p>
           </div>
           <div className="col-8">
-           <a href="#">About</a>
+          <Link to="/category/activities">About</Link>
           </div>
         </div>
         <div className="question_row">
@@ -43,7 +44,8 @@ export default function Services() {
             <p>Lorem ipsum dolor</p>
           </div>
           <div className="col-8">
-            <a href="#">About</a>
+            
+            <Link to="/category/hiking-equipment">About</Link>
           </div>
         </div>
       </div>
