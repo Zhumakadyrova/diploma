@@ -21,9 +21,10 @@ export default function Discounts() {
               />
             </div>
             <div className=" flip-card-back">
-              <p>Lorem ipsum dolor sit</p>
+              <p>Venice with our ice</p>
               <span>50$</span> <br />
-              <a href="#"> Learn more</a>
+              <Link to= "/product/venice">Learn more</Link>
+              
             </div>
           </div>
         </div>
@@ -38,7 +39,7 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
-              <a href="#"> Learn more</a>
+              <Link to= "/product/venice">Learn more</Link>
             </div>
           </div>
         </div>
@@ -54,7 +55,8 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
-              <a href="#"> Learn more</a>
+
+              <Link to= "/product/spain">Learn more</Link>
             </div>
           </div>
         </div>
@@ -69,7 +71,7 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
-              <a href="#"> Learn more</a>
+              <Link to= "/product/portugal-day">Learn more</Link>
             </div>
           </div>
         </div>
@@ -86,7 +88,7 @@ export default function Discounts() {
             <div className=" flip-card-back">
               <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
-              <a href="#"> Learn more</a>
+              <Link to= "/product/istanbul-day">Learn more</Link>
             </div>
           </div>
         </div>
@@ -101,7 +103,7 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
-              <a href="#"> Learn more</a>
+              <Link to= "/product/italy-trip">Learn more</Link>
             </div>
           </div>
         </div>
@@ -109,14 +111,14 @@ export default function Discounts() {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <img
-                src="https://i.pinimg.com/564x/60/88/ec/6088ec1a0b9af7edfd275e9984c214cb.jpg"
+                src="https://i.pinimg.com/564x/f0/3b/ee/f03bee85e7e5fdb6a0d84819c5643337.jpg"
                 alt="Avatar"
               />
             </div>
             <div className="flip-card-back">
               <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
-              <a href="#"> Learn more</a>
+              <Link to= "/product/france">Learn more</Link>
             </div>
           </div>
         </div>
@@ -124,14 +126,14 @@ export default function Discounts() {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <img
-                src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
+                src="https://i.pinimg.com/564x/37/34/fc/3734fcbdf6cdf67549bcc6905f670b91.jpg"
                 alt="Avatar"
               />
             </div>
             <div className="flip-card-back">
               <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
-              <a href="#"> Learn more</a>
+              <Link to= "/product/london-trip">Learn more</Link>
             </div>
           </div>
         </div>
