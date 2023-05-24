@@ -65,6 +65,7 @@
 
 .Main_discount .col-6 img {
   width: 100%;
+  display: block;
 }
 
 /* This container is needed to position the front and back side */

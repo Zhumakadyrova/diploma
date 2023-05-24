@@ -9,63 +9,6 @@ export default function Discounts() {
         <p>Tours from 5 USD</p>
         <p>Don' miss your chance. To be a part of our adventures</p>
       </div>
-      {/* <div className="Discount_name">
-        <div className="Dscount_card">
-          <div className="card-image">
-            <img
-              src="https://i.pinimg.com/564x/84/0d/56/840d561182c6a9647c82dd03fcd08506.jpg"
-              alt=""
-            />
-          </div>
-          <div className="card-text">
-            Lorem ipsum dolor sit amet. <br />
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-        <div className="Discount_card">
-          <div className="card-image">
-            {" "}
-            <img
-              src="https://i.pinimg.com/564x/5f/84/4a/5f844aee8c5ea610098eff26bc23f174.jpg"
-              alt=""
-            />
-          </div>
-          <div className="card-text">
-            Lorem ipsum dolor sit amet. <br />
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-        <div className="Discount_card">
-          <div className="card-image">
-            {" "}
-            <img
-              src="https://i.pinimg.com/564x/d4/27/2c/d4272ce01c35d97d06f46777d2ddf955.jpg"
-              alt=""
-            />
-          </div>
-          <div className="card-text">
-            Lorem ipsum dolor sit amet. <br />
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-        <div className="Discount_card">
-          <div className="card-image">
-            {" "}
-            <img
-              src="https://i.pinimg.com/564x/39/5b/26/395b26a876388aa94d0f9b7cddc70833.jpg"
-              alt=""
-            />
-          </div>
-          <div className="card-text">
-            Lorem ipsum dolor sit amet. <br />
-            <span>50$</span> <br />
-            <a href="#"> Learn more</a>
-          </div>
-        </div>
-      </div> */}
       <div className="row Discount_name_2">
         <div className="flip-card">
           <div className="flip-card-inner">
@@ -100,10 +43,11 @@ export default function Discounts() {
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img
+              <a href="./product"><img
                 src="https://i.pinimg.com/564x/5f/84/4a/5f844aee8c5ea610098eff26bc23f174.jpg"
                 alt="Avatar"
-              />
+              /></a>
+              
             </div>
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
