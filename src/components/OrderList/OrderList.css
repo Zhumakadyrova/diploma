@@ -1,12 +1,12 @@
-.OrderList{
+.OrderList {
   z-index: 1;
   color: white;
   padding: 20px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  
 }
-.Order{
+.Order {
   box-shadow: 0 0 8px #7a7e7fee;
   margin: 8px;
   width: 30%;
