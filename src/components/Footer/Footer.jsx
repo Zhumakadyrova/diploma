@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import "./Footer.css";
@@ -6,9 +7,21 @@ import footer_image2 from "../../assets/pages_photo/footer_img2.jpg";
 import s_media_instagram from "../../assets/contacts_icons/instagram.jpg";
 import s_media_facebook from "../../assets/contacts_icons/facebook.jpg";
 import s_media_tiktok from "../../assets/contacts_icons/tiktok.jpg";
-import s_media_whatsapp from "../../assets/contacts_icons/whatsapp.jpg"
+import s_media_whatsapp from "../../assets/contacts_icons/whatsapp.jpg";
 
-export default function Footer(Footer) {
+export default function Footer() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Выполняется поиск:', searchQuery);
+    setSearchQuery('');
+  };
+
   return (
     <div className="Footer">
       <div className="Footer_link">
@@ -24,35 +37,46 @@ export default function Footer(Footer) {
           <div className="Footer_card">
             <div className="Footer_card_1">
               <a href="https://www.advantour.com/kyrgyzstan/tourism.htm">
-              <div className="Card_text">
-                Lorem ipsum dolor sit amet 
-                Blanditiis, id officiis. <br />
-              </div>
-              <div className="Card_image">
-                <img src={footer_image} alt="" />
-              </div>
+                <div className="Card_text">
+                  Lorem ipsum dolor sit amet Blanditiis, id officiis. <br />
+                </div>
+                <div className="Card_image">
+                  <img src={footer_image} alt="" />
+                </div>
               </a>
             </div>
             <div className="Footer_card_1">
               <a href="https://www.advantour.com/kyrgyzstan/tourism.htm">
-              <div className="Card_text">
-                Lorem ipsum dolor sit
-                Blanditiis, id officiis. <br />
-              </div>
-              <div className="Card_image">
-                <img src={footer_image2} alt="" />
-              </div>
+                <div className="Card_text">
+                  Lorem ipsum dolor sit Blanditiis, id officiis. <br />
+                </div>
+                <div className="Card_image">
+                  <img src={footer_image2} alt="" />
+                </div>
               </a>
             </div>
           </div>
         </div>
         <div className="footer_contacts">
           <h3>Contact us</h3>
-          <a href="mailto:zhumakadyrova7@gmail.com" target="_blank">zhumakadyrova7@gmail.com</a> <br />
-          <a href="tel:+996550197557" target="_blank">+996550197557</a>
+          <a href="mailto:zhumakadyrova7@gmail.com" target="_blank">
+            zhumakadyrova7@gmail.com
+          </a>
+          <br />
+          <a href="tel:+996550197557" target="_blank">
+            +996550197557
+          </a>
           <div className="input">
-           <input type="text" placeholder = " Search..."/>
-           <button>Search</button>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                id="site-search"
+                placeholder="Search..."
+                value={searchQuery}
+                onChange={handleSearch}
+              />
+              <button type="submit">Search</button>
+            </form>
           </div>
         </div>
       </div>
