@@ -1,46 +1,44 @@
-.Footer{
+.Footer {
   margin: 0;
+  width: 100%;
 }
 footer {
   width: 100%;
   background-color: rgba(235, 235, 235, 0.416);
 }
-footer .Logo{
-  width: 200px;
+footer .Logo {
+  max-width: 200px;
   margin: 10px 0;
 }
-.Footer_link{
+.Footer_link {
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
-.Footer_link .Nav ul{
+.Footer_link .Nav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.Footer_link .Nav ul a{
+.Footer_link .Nav ul a {
   margin: 0;
-  
 }
-.Footer_link h3{
+.Footer_link h3 {
   margin: 20px 15px 20px 0;
-}
-.Footer_card_1{
-  padding: 7px;
-}
-.Footer_link h3{
   text-align: center;
 }
-.Footer_news{
+.Footer_card_1 {
+  padding: 7px;
+}
+.Footer_news {
   max-width: 300px;
 }
-.Card_image img{
+.Card_image img {
   height: 70px;
   width: 70px;
   margin: 5px;
 }
-.Footer_card_1{
+.Footer_card_1 {
   display: flex;
 }
 .Footer_card a {
@@ -48,43 +46,102 @@ footer .Logo{
   color: black;
   font-weight: 600;
 }
-.Footer_card_1:hover{
+.Footer_card_1:hover {
   box-shadow: 0 0 8px #7a7e7fee;
 }
-.Footer_bottom{
+.Footer_bottom {
   margin: 0;
   box-shadow: 0 10px 8px #7a7e7f7b;
   background-color: rgba(207, 201, 201, 0.271);
 }
-.Footer_bottom ul{
+.Footer_bottom ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
 }
-.Footer_bottom img{
+.Footer_bottom img {
   height: 30px;
   width: 30px;
   margin: 10px;
   scale: 1.2;
-  transition: .5s;
+  transition: 0.5s;
 }
-.Footer_bottom img:hover{
+.Footer_bottom img:hover {
   scale: 1.6;
 }
-.footer_contacts a{
+.footer_contacts a {
   text-decoration: none;
   color: black;
   padding: 10px 0;
   line-height: 30px;
 }
-.footer_contacts a:hover{
+.footer_contacts a:hover {
   text-shadow: 0 0 5px black;
 }
-.footer_contacts .input{
+.footer_contacts .input {
   margin-top: 15px;
   display: flex;
   justify-content: space-around;
 }
-.footer_contacts input{
+.footer_contacts input {
   margin-right: 10px;
+}
+@media (max-width: 900px) {
+  .Footer_link .Nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .Footer_link .Nav ul a {
+    margin: 0;
+    color: black;
+  }
+
+  .Footer_news {
+    display: none;
+  }
+  .Card_image img {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+  }
+  .Footer_card_1 {
+    display: flex;
+  }
+  .Footer_card a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  .Footer_card_1:hover {
+    box-shadow: 0 0 8px #7a7e7fee;
+  }
+}
+@media (max-width: 600px) {
+  footer .Logo img {
+    max-width: 80px;
+    margin: 10px 0;
+  }
+  .Footer_link h3 {
+    margin: 20px 15px 0 0;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .footer_contacts a {
+    display: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    line-height: 30px;
+  }
+  .footer_contacts h3 {
+    display: none;
+  }
+  .footer_contacts input {
+    display: none;
+  }
+  .footer_contacts button {
+    display: none;
+  }
 }
