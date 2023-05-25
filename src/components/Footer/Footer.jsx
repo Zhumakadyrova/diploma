@@ -23,25 +23,26 @@ export default function Footer(Footer) {
           <h3>Latest news</h3>
           <div className="Footer_card">
             <div className="Footer_card_1">
+              <a href="https://www.advantour.com/kyrgyzstan/tourism.htm">
               <div className="Card_text">
                 Lorem ipsum dolor sit amet 
                 Blanditiis, id officiis. <br />
-                <a href="https://www.advantour.com/kyrgyzstan/tourism.htm" target="blank"><span>19.06.2023</span></a>
-
               </div>
               <div className="Card_image">
                 <img src={footer_image} alt="" />
               </div>
+              </a>
             </div>
             <div className="Footer_card_1">
+              <a href="https://www.advantour.com/kyrgyzstan/tourism.htm">
               <div className="Card_text">
                 Lorem ipsum dolor sit
                 Blanditiis, id officiis. <br />
-                <a href="https://www.advantour.com/kyrgyzstan/tourism.htm" target="blank"><span>19.06.2023</span></a>
               </div>
               <div className="Card_image">
                 <img src={footer_image2} alt="" />
               </div>
+              </a>
             </div>
           </div>
         </div>

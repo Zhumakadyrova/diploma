@@ -27,9 +27,6 @@ footer .Logo {
   margin: 20px 15px 20px 0;
   text-align: center;
 }
-.Footer_card_1 {
-  padding: 7px;
-}
 .Footer_news {
   max-width: 300px;
 }
@@ -38,8 +35,9 @@ footer .Logo {
   width: 70px;
   margin: 5px;
 }
-.Footer_card_1 {
+.Footer_card_1 a {
   display: flex;
+  padding: 7px;
 }
 .Footer_card a {
   text-decoration: none;
