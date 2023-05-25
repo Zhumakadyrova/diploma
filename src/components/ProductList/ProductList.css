@@ -24,6 +24,8 @@
   background-image: linear-gradient(rgba(182, 178, 183, 0.227), 
   rgba(55, 214, 238, 0.073)), url(https://i.pinimg.com/564x/df/58/20/df5820cc523cbd07cf9a09bf8ec92c3e.jpg);
   background-size:cover;
+  padding: 20px 0;
+
 }
 .Product_info{
   padding: 10px;
