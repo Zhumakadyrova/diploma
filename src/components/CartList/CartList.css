@@ -4,27 +4,26 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
-  
 }
-.CartItem{  
+.CartItem {
   background-color: rgba(235, 235, 235, 0.548);
 }
-.CartItem a{
+.CartItem a {
   width: 300px;
   padding-right: 20px;
   text-decoration: none;
   color: black;
 }
-.CartItem a:hover{
-  text-shadow:  0 0 8px; 
+.CartItem a:hover {
+  text-shadow: 0 0 8px;
 }
 
-.CartItem span{
+.CartItem span {
   width: 100px;
 }
-.CartItem input{
+.CartItem input {
   align-items: center;
   width: 40px;
   text-align: center;
@@ -38,8 +37,68 @@
   display: block;
 }
 
-.CartItem button{
+.CartItem button {
   align-items: flex-end;
   cursor: pointer;
   margin-left: 35px;
+}
+@media (max-width: 820px) {
+  .CartList .CartItem {
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .CartItem a {
+    width: 100px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  .CartItem a:hover {
+    text-shadow: 0 0 8px;
+  }
+
+  .CartItem span {
+    width: 50px;
+  }
+  .CartItem input {
+    align-items: center;
+    width: 40px;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .CartList .CartItem img {
+    width: 90px;
+    margin-right: 10px;
+    height: 100px;
+    display: block;
+  }
+
+  .CartItem button {
+    align-items: flex-end;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 510px) {
+  .CartList .CartItem {
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .CartList .CartItem img {
+    width: 70px;
+    margin-right: 10px;
+    height: 80px;
+    display: block;
+  }
 }
