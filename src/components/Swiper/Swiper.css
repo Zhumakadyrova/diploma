@@ -6,13 +6,11 @@
   text-align: center;
   box-shadow: 0 0 5px #f2f2f2;
   padding: 10px;
-  
-}
-.slide{
+  width: 100%;
   color: white;
   margin-bottom: 30px;
-  cursor: pointer;
 }
+
 .slide h2 {
   font-size: 24px;
   margin: 20px;
@@ -23,7 +21,7 @@
   font-size: 18px;
   margin-bottom: 25px;
 }
-.bg-frame{
+.bg-frame {
   padding: 40px;
   box-shadow: 0 0 8px #7a7e7fee;
   z-index: -10;
@@ -32,10 +30,7 @@
   width: 500px;
   height: 400px;
   margin-bottom: 20px;
-  
 }
-
-
 
 .slide button {
   font-size: 15px;
@@ -48,7 +43,6 @@
 
 .image-container {
   animation: shrink var(--duration) var(--delay) linear infinite;
-  
 }
 
 @keyframes shrink {
@@ -66,4 +60,28 @@
 :root {
   --duration: 5s;
   --delay: 0s;
+}
+@media (max-width: 620px) {
+  .bg-frame {
+    padding: 20px;
+    box-shadow: 0 0 8px #7a7e7fee;
+    z-index: -10;
+  }
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px #f2f2f2;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .image-container img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
 }
