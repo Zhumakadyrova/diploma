@@ -6,6 +6,7 @@
   width: 260px;
   overflow: hidden;
 
+
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +35,7 @@
   transform: translateX(0);
 }
 
-@media (min-width: 750px) {
+@media (min-width: 950px) {
   .Drawer .backdrop {
     display: none;
   }
