@@ -105,7 +105,7 @@ export default function Contacts() {
             setActiveDropdown={setActiveDropdown}
           >
             <li className="back third-link1 dropdown-content last_p">
-              <p>
+              <p className="last_p">
                 <ul>
                   <li>
                     <strong>
@@ -135,7 +135,7 @@ export default function Contacts() {
           >
             <li className="back fourth-link1 dropdown-content">
               <p className="last_p">
-                <strong>We are on YouTube</strong>
+                <strong>YouTube</strong>
               </p>
             </li>
           </Dropdown>
