@@ -1,9 +1,9 @@
-.row.Discount_name_2  {
+.row.Discount_name_2 {
   margin-top: 350px;
   display: flex;
   justify-content: space-evenly;
 }
-.Discount_name_2{
+.Discount_name_2 {
   margin-top: 40px;
   display: flex;
   justify-content: space-evenly;
@@ -22,7 +22,7 @@
   color: #4f201d;
   padding: 180px 7px 0;
 }
-.Discount_name_2 .flip-card-back p{
+.Discount_name_2 .flip-card-back p {
   font-weight: 700;
 }
 .Discount_name_2 .flip-card-back a {
@@ -32,45 +32,6 @@
 .Discount_name_2 .flip-card-back a:hover {
   text-shadow: 0 0 1px #140707;
 }
-.Main_discount  {
-  margin: 40px 20px;
-  padding: 40px 40px;
-  display: flex;
-  justify-content: center;
-  color: white;
-  box-shadow: 0 0 8px #7a7e7fee;
-}
-.Main_discount .col-6 {
-  margin: 25px;
-  color: white;
-  box-shadow: 0 0 8px #7a7e7fee;
-  width: 85%;
-  text-align: center;
-  transform: scale(1);
-  transition: 1s;
-}
-.Main_discount .col-6:hover{
-  transform: scale(1.2);
-}
-.Main_discount .col-6_content h3{
-  padding-top: 80px;
-  margin: 15px;
-}
-.Main_discount .col-6 a {
-  margin: 20px;
-  color: white;
-  text-decoration: none;
-  
-}
-.Main_discount .col-6 a:hover{
-  text-shadow: 0 0 15px #c21b1b20;
-}
-
-.Main_discount .col-6 img {
-  width: 100%;
-  display: block;
-}
-
 
 /* This container is needed to position the front and back side */
 .flip-card {
@@ -120,10 +81,180 @@
   color: white;
   box-shadow: 0 0 8px #7a7e7fee;
 }
-.flip-card-back a{
+.flip-card-back a {
   color: white;
   text-decoration: none;
   color: #3b1412;
 }
+.Main_discount {
+  margin: 40px 20px;
+  padding: 40px 40px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 0 8px #7a7e7fee;
+}
+.Main_discount .col-6 {
+  margin: 25px;
+  color: white;
+  box-shadow: 0 0 8px #7a7e7fee;
+  width: 85%;
+  text-align: center;
+  transform: scale(1);
+  transition: 1s;
+}
+.Main_discount .col-6:hover {
+  transform: scale(1.2);
+}
+.Main_discount .col-6_content h3 {
+  padding-top: 80px;
+  margin: 15px;
+}
+.Main_discount .col-6 a {
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+}
+.Main_discount .col-6 a:hover {
+  text-shadow: 0 0 15px #c21b1b20;
+}
 
+.Main_discount .col-6 img {
+  width: 100%;
+  display: block;
+}
 
+@media (max-width: 900px) {
+  .row.Discount_name_2 {
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .Discount_name_2 {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .Discount_name_2 .card-image img {
+    width: 200px;
+    max-height: 200px;
+  }
+
+  .Discount_name_2 .flip-card-back {
+    background-image: url(/images/logo1.png);
+    opacity: 5.75;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #4f201d;
+    padding: 180px 7px 0;
+  }
+  .Discount_name_2 .flip-card-back p {
+    font-weight: 700;
+  }
+  .Discount_name_2 .flip-card-back a {
+    text-decoration: none;
+    color: #3b1412;
+  }
+  .Discount_name_2 .flip-card-back a:hover {
+    text-shadow: 0 0 1px #140707;
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin: 10px;
+    height: 250px;
+    perspective: 1000px;
+  }
+
+  /* Do a horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    box-shadow: 0 0 8px #7a7e7fee;
+  }
+
+  /* Style the front side */
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background-color: rgba(255, 255, 255, 0.888);
+    color: white;
+    box-shadow: 0 0 8px #7a7e7fee;
+  }
+  .flip-card-back a {
+    color: white;
+    text-decoration: none;
+    color: #3b1412;
+  }
+}
+@media (max-width: 700px) {
+  .Main_discount {
+    margin: 40px 20px;
+    padding: 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 8px #7a7e7fee;
+  }
+  .Main_discount .col-6 {
+    margin: 25px auto;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 0 8px #7a7e7fee;
+    width: 85%;
+    text-align: center;
+    transform: scale(1);
+    transition: 1s;
+  }
+  .Main_discount .col-6:hover {
+    transform: scale(1.2);
+  }
+  .Main_discount .col-6_content h3 {
+    padding: 20px 20px 0;
+    margin: 15px;
+  }
+  .Main_discount .col-6 a {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .Main_discount .col-6 a:hover {
+    text-shadow: 0 0 15px #c21b1b20;
+  }
+
+  .Main_discount .col-6 img {
+    width: 100%;
+    display: block;
+  }
+}

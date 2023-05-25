@@ -23,8 +23,7 @@ export default function Discounts() {
             <div className=" flip-card-back">
               <p>Venice with our ice</p>
               <span>50$</span> <br />
-              <Link to= "/product/venice">Learn more</Link>
-              
+              <Link to="/product/venice">Learn more</Link>
             </div>
           </div>
         </div>
@@ -39,24 +38,24 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
-              <Link to= "/product/venice">Learn more</Link>
+              <Link to="/product/venice">Learn more</Link>
             </div>
           </div>
         </div>
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <a href="./product"><img
-                src="https://i.pinimg.com/564x/5f/84/4a/5f844aee8c5ea610098eff26bc23f174.jpg"
-                alt="Avatar"
-              /></a>
-              
+              <a href="./product">
+                <img
+                  src="https://i.pinimg.com/564x/5f/84/4a/5f844aee8c5ea610098eff26bc23f174.jpg"
+                  alt="Avatar"
+                />
+              </a>
             </div>
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
-
-              <Link to= "/product/spain">Learn more</Link>
+              <Link to="/product/spain">Learn more</Link>
             </div>
           </div>
         </div>
@@ -71,7 +70,7 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
-              <Link to= "/product/portugal-day">Learn more</Link>
+              <Link to="/product/portugal-day">Learn more</Link>
             </div>
           </div>
         </div>
@@ -88,7 +87,7 @@ export default function Discounts() {
             <div className=" flip-card-back">
               <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
-              <Link to= "/product/istanbul-day">Learn more</Link>
+              <Link to="/product/istanbul-day">Learn more</Link>
             </div>
           </div>
         </div>
@@ -103,7 +102,7 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor </p>
               <span>50$</span> <br />
-              <Link to= "/product/italy-trip">Learn more</Link>
+              <Link to="/product/italy-trip">Learn more</Link>
             </div>
           </div>
         </div>
@@ -118,7 +117,7 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
-              <Link to= "/product/france">Learn more</Link>
+              <Link to="/product/france">Learn more</Link>
             </div>
           </div>
         </div>
@@ -133,7 +132,7 @@ export default function Discounts() {
             <div className="flip-card-back">
               <p>Lorem ipsum dolor.</p>
               <span>50$</span> <br />
-              <Link to= "/product/london-trip">Learn more</Link>
+              <Link to="/product/london-trip">Learn more</Link>
             </div>
           </div>
         </div>
@@ -146,17 +145,15 @@ export default function Discounts() {
             <Link to="/contacts">Contact us</Link>
           </div>
         </div>
-        
-          <Link to="/product/rukh-ordo">
+
+        <Link to="/product/rukh-ordo">
           <div className="col-6">
-          <img
-            src="https://i.pinimg.com/564x/91/cf/42/91cf4253d596ee9b523086536f468c07.jpg"
-            alt=""
-          />
+            <img
+              src="https://i.pinimg.com/564x/91/cf/42/91cf4253d596ee9b523086536f468c07.jpg"
+              alt=""
+            />
           </div>
-          </Link>
-          
-        
+        </Link>
       </div>
     </div>
   );
