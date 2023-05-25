@@ -1,6 +1,10 @@
+.Product{
+  margin: 0 15%;
+}
 .Product1{
   display: flex;
-  margin: 58px 100px 25px;
+  justify-content: center;
+  margin: 58px auto;
 }
 .Product1 img{
   height: 250px;
@@ -19,9 +23,7 @@
   padding: 8px;
   line-height: 25px;
 }
-.Product-text{
-  margin: 0px 20px;
-}
+
 
 .Product_description{
   background-color: white;
