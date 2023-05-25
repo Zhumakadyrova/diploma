@@ -61,4 +61,7 @@
   .Layout main{
     flex: 100%;
   }
+  .Layout aside{
+    flex: 100%;
+  }
 }
