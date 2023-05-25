@@ -19,19 +19,17 @@ export default function CategoryList() {
   };
 
   const output = categories.map((category) => {
-    const relatedProducts = products.filter((product) => product.category === category.id);
+    const relatedProducts = products.filter(
+      (product) => product.category === category.id
+    );
     const relatedProductList = relatedProducts.map((product) => (
       <div className="NavLink">
-              <li key={product.id}>
-        
-        <NavLink to={"/product/" + product.path}>{product.name}</NavLink>
-      
-        
-      </li>
+        <li key={product.id}>
+          <NavLink to={"/product/" + product.path}>{product.name}</NavLink>
+        </li>
       </div>
-
     ));
-    
+
     const showSubcategory = showSubcategories[category.id];
 
     return (
@@ -42,7 +40,10 @@ export default function CategoryList() {
       >
         <NavLink to={"/category/" + category.path}>{category.name}</NavLink>
         <DeleteCategory category={category} />
-        <ul className="subcategory" style={{ display: showSubcategory ? "block" : "none" }}>
+        <ul
+          className="subcategory"
+          style={{ display: showSubcategory ? "block" : "none" }}
+        >
           {relatedProductList}
         </ul>
       </li>
@@ -60,11 +61,14 @@ export default function CategoryList() {
   return (
     <div className="CategoryList">
       <div className="drop">
-      <ul id="dropdown" className="dropdownContent" style={{ transitionDelay: `${dropdownDelay}ms` }}>
-        {output}
-      </ul>
+        <ul
+          className="dropdownContent"
+          style={{ transitionDelay: `${dropdownDelay}ms` }}
+        >
+          <div className="output">{output}</div>
+        </ul>
       </div>
-      
+
       <AddCategory />
     </div>
   );
