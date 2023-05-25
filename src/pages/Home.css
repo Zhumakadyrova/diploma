@@ -1,37 +1,37 @@
 .Main {
   background-color: rgba(235, 235, 235, 0.548);
-  max-width: 300px;
-  margin: 90px;
+  max-width: 100%;
+  margin: 50px;
   padding: 20px;
   text-align: center;
 }
-.Link a{
+.Link a {
   color: wheat;
 }
-.Main h1{
-  padding: 8px 0
+.Main h1 {
+  padding: 8px 0;
 }
 
-.Cntct{
+.Cntct {
   display: flex;
   justify-content: center;
 }
-.Cnct_link{
+.Cnct_link {
   margin-top: 50px;
   background: linear-gradient(-45deg, #ee7652a1, #c6f6f65a, #a523d577, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-  text-align: center; 
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  text-align: center;
   width: 200px;
   padding: 20px;
 }
-.Home_info{
+.Home_info {
   display: flex;
   height: 400px;
   justify-content: baseline;
   margin: 150px 100px 100px;
 }
-.Home_content{
+.Home_content {
   height: 400px;
   width: 500px;
   background-image: url(https://i.pinimg.com/564x/1b/da/74/1bda749efb611e53ae31d818cbd7f706.jpg);
@@ -40,34 +40,34 @@
   text-align: center;
   box-shadow: 0 0 8px #7a7e7fee;
 }
-.Home_content h2{
-color: white;
-padding: 20px 0;
+.Home_content h2 {
+  color: white;
+  padding: 20px 0;
 }
-.Home_content__text{
-color: white;
-height: 400px;
-box-shadow: 0 0 8px #7a7e7fee;
-text-align: center;
+.Home_content__text {
+  color: white;
+  height: 400px;
+  box-shadow: 0 0 8px #7a7e7fee;
+  text-align: center;
 }
-.Home_content__text p{
+.Home_content__text p {
   padding: 20px 50px;
   line-height: 35px;
 }
-.Home_content__text h2{
+.Home_content__text h2 {
   padding: 20px 50px;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .Cnct_link {
@@ -82,15 +82,233 @@ text-align: center;
   color: black;
   font-weight: 600;
   scale: 1.5;
-  transition:  1.5s;
+  transition: 1.5s;
 }
 
 .Cnct_link:hover a {
-  scale:2;
+  scale: 2;
 }
 
 .Cnct_text {
   font-size: 16px;
   transform-origin: top;
   transition: transform 1s;
+}
+
+@media (max-width: 1200px) {
+  .Main {
+    background-color: rgba(235, 235, 235, 0.548);
+    max-width: 300px;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+  }
+  .Link a {
+    color: wheat;
+  }
+  .Main h1 {
+    padding: 8px 0;
+  }
+
+  .Cntct {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+  }
+  .Cnct_link {
+    background: linear-gradient(
+      -45deg,
+      #ee7652a1,
+      #c6f6f65a,
+      #a523d577,
+      #23d5ab
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+  }
+  .Home_info {
+    display: flex;
+    height: 800px;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    margin: 120px 100px;
+  }
+  .Home_content {
+    max-height: 400px;
+    max-width: 500px;
+    background-image: url(https://i.pinimg.com/564x/1b/da/74/1bda749efb611e53ae31d818cbd7f706.jpg);
+    background-size: contain;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: 0 0 8px #7a7e7fee;
+  }
+  .Home_content h2 {
+    color: white;
+    padding: 38% 0;
+  }
+  .Home_content__text {
+    color: white;
+    max-height: 400px;
+    box-shadow: 0 0 8px #7a7e7fee;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+  }
+  .Home_content__text p {
+    padding: 20px 40px;
+    line-height: 35px;
+  }
+  .Home_content__text h2 {
+    padding: 20px 50px;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .Cnct_link {
+    position: relative;
+    display: inline-block;
+  }
+
+  .Cnct_link a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    scale: 1.5;
+    transition: 1.5s;
+  }
+
+  .Cnct_link:hover a {
+    scale: 2;
+  }
+
+  .Cnct_text {
+    font-size: 16px;
+    transform-origin: top;
+    transition: transform 1s;
+  }
+}
+@media (max-width: 800px) {
+  .Main {
+    background-color: rgba(235, 235, 235, 0.548);
+    max-width: 180px;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+  }
+  .Link a {
+    color: wheat;
+  }
+  .Main h1 {
+    padding: 3px 0;
+    line-height: 25px;
+    font-size: 25px;
+  }
+
+  .Cntct {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+  }
+  .Cnct_link {
+    background: linear-gradient(
+      -45deg,
+      #ee7652a1,
+      #c6f6f65a,
+      #a523d577,
+      #23d5ab
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .Home_info {
+    display: flex;
+    height: 700px;
+    flex-wrap: wrap;
+    margin: 30px 50px;
+  }
+  .Home_content {
+    max-height: 300px;
+    max-width: 400px;
+    background-image: url(https://i.pinimg.com/564x/1b/da/74/1bda749efb611e53ae31d818cbd7f706.jpg);
+    background-size: contain;
+    margin: 5px auto;
+    text-align: center;
+    box-shadow: 0 0 8px #7a7e7fee;
+  }
+  .Home_content h2 {
+    color: white;
+    padding: 50% 0;
+  }
+  .Home_content__text {
+    color: white;
+    max-height: 300px;
+    box-shadow: 0 0 8px #7a7e7fee;
+    text-align: center;
+    max-width: 400px;
+    margin: 5px auto;
+  }
+  .Home_content__text p {
+    padding: 0px 10px;
+    line-height: 20px;
+  }
+  .Home_content__text h2 {
+    padding: 10px 0px;
+  }
+  .Main {
+    background-color: rgba(235, 235, 235, 0.548);
+    max-width: 180px;
+    padding: 10px;
+    text-align: center;
+  }
+  .Link a {
+    color: wheat;
+  }
+  .Main h1 {
+    padding: 3px 0;
+    line-height: 25px;
+    font-size: 25px;
+  }
+  .Main p {
+    display: none;
+  }
+
+  .Cntct {
+    display: flex;
+    justify-content: center;
+    margin: -100px 0 80px;
+  }
+  .Cnct_link {
+    background: linear-gradient(
+      -45deg,
+      #ee7652a1,
+      #c6f6f65a,
+      #a523d577,
+      #23d5ab
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+  }
 }

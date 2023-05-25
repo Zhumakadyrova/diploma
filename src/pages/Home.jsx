@@ -32,7 +32,6 @@ export default function Home() {
             fugit repellendus rem?
           </p>
         </div>
-        
       </div>
       <Slide />
     </div>
