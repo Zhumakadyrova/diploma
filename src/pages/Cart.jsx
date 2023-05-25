@@ -5,7 +5,7 @@ import "./Cart.css";
 export default function Cart() {
   return(
     <div className="Cart">
-      <h1>Cart</h1>
+      <h2>Cart</h2>
       <CartList/>
       <OrderForm/>
     </div>
