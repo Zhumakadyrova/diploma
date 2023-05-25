@@ -32,8 +32,10 @@
 }
 
 .CartList .CartItem img {
-  max-width: 150px;
+  width: 90px;
   margin-right: 20px;
+  height: 100px;
+  display: block;
 }
 
 .CartItem button{
