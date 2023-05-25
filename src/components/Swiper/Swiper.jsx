@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Swiper.css";
 import img1 from "../../assets/slide_photo/1st.jpg";
 import img2 from "../../assets/slide_photo/2nd.jpg";
@@ -15,19 +16,21 @@ const Slide = () => {
     img2,
     img3,
     img4,
-    img5
+    img5,
   ];
 
   const nextSlide = () => {
-    setCounter(prevCounter => (prevCounter + 1) % images.length);
+    setCounter((prevCounter) => (prevCounter + 1) % images.length);
   };
 
   const prevSlide = () => {
-    setCounter(prevCounter => (prevCounter - 1 + images.length) % images.length);
+    setCounter(
+      (prevCounter) => (prevCounter - 1 + images.length) % images.length
+    );
   };
 
   const togglePause = () => {
-    setIsPaused(prevIsPaused => !prevIsPaused);
+    setIsPaused((prevIsPaused) => !prevIsPaused);
   };
 
   useEffect(() => {
@@ -46,17 +49,21 @@ const Slide = () => {
     <div className="slide">
       <h2>Our tourist's photo</h2>
       <p>This is a stylish and interactive slide created using React.</p>
-      <div className="bg-frame">
-        <div className="image-container">
-          <img src={images[counter]} alt="Slide Image" />
+      <Link to="/category/tour-to-europe">
+        <div className="bg-frame">
+          <div className="image-container">
+            <img src={images[counter]} alt="Slide Image" />
+          </div>
         </div>
-      </div>
+      </Link>
       <div className="counter">
-        <span>{counter + 1}/{images.length}</span>
+        <span>
+          {counter + 1}/{images.length}
+        </span>
       </div>
       <div className="controls">
         <button onClick={prevSlide}>Previous</button>
-        <button onClick={togglePause}>{isPaused ? 'Play' : 'Pause'}</button>
+        <button onClick={togglePause}>{isPaused ? "Play" : "Pause"}</button>
         <button onClick={nextSlide}>Next</button>
       </div>
     </div>
