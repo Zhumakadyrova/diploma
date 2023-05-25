@@ -12,10 +12,14 @@ export default function DeleteCategory({ category }) {
   }
 
   function onDeleteClick() {
-    const count = Object.values(products).filter(product => product.category === category.id).length;
+    const count = Object.values(products).filter(
+      (product) => product.category === category.id
+    ).length;
 
     if (count > 0) {
-      alert("This category has existing products. Please delete them before deleting a category.");
+      alert(
+        "This category has existing products. Please delete them before deleting a category."
+      );
 
       return;
     }
@@ -29,10 +33,7 @@ export default function DeleteCategory({ category }) {
 
   return (
     <div className="DeleteCategory">
-      <button  onClick={onDeleteClick}>
-        X
-      </button>
+      <button onClick={onDeleteClick}>X</button>
     </div>
-
   );
 }

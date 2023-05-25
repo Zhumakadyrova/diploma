@@ -1,4 +1,3 @@
-
 import { createContext, useEffect, useState } from "react";
 import { Route, Router, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -25,7 +24,7 @@ import Discounts from "./pages/Discounts";
 export const AppContext = createContext({
   categories: [],
   products: [],
-  orders:[],
+  orders: [],
   // корзина
   cart: {},
   setCart: () => {},
@@ -112,7 +111,7 @@ export default function App() {
     onCategoriesLoad(setCategories);
     onProductsLoad(setProducts);
     onOrdersLoad(setOrders);
-    
+
     onAuthChange((user) => {
       if (user) {
         user.isAdmin = user.email === "zumakadyrovanagima@gmail.com";
@@ -132,14 +131,14 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/transfer" element={<Transfer />} />
-            <Route path ="/services" element= {< Services/>} />
-            <Route path = "/discount" element={<Discounts/>} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/discount" element={<Discounts />} />
             <Route path="/category/:path" element={<Category />} />
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/orders" element={<Orders/>}/>
+            <Route path="/orders" element={<Orders />} />
           </Routes>
         </Layout>
       </AppContext.Provider>

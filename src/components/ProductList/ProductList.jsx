@@ -15,7 +15,8 @@ export default function ProductList({ category }) {
       <div className="Product" key={product.id}>
         <img src={product.picture} alt={product.name} />
         <div className="Product_info">
-          <Link to={"/product/" + product.path}>{product.name}</Link><br />
+          <Link to={"/product/" + product.path}>{product.name}</Link>
+          <br />
           <span>{product.price} USD </span>
           <div className="AddRemove">
             <AddToCart product={product} />
@@ -27,11 +28,9 @@ export default function ProductList({ category }) {
   return (
     <div className="bg">
       <div className="ProductList">
-      {output}
-      <AddProduct category={category} />
+        {output}
+        <AddProduct category={category} />
       </div>
     </div>
-    
   );
 }
-

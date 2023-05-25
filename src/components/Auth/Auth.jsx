@@ -19,7 +19,10 @@ export default function Auth() {
   if (user) {
     output = (
       <span className="Logout">
-        <Link to={"/orders"} className="OrderLink"> <img src={userIicon} alt="" /> </Link>
+        <Link to={"/orders"} className="OrderLink">
+          {" "}
+          <img src={userIicon} alt="" />{" "}
+        </Link>
         <button onClick={logOut}>Sign out</button>
       </span>
     );

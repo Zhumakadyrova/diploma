@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import "./Footer.css";
@@ -10,7 +10,7 @@ import s_media_tiktok from "../../assets/contacts_icons/tiktok.jpg";
 import s_media_whatsapp from "../../assets/contacts_icons/whatsapp.jpg";
 
 export default function Footer() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
@@ -18,8 +18,8 @@ export default function Footer() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Выполняется поиск:', searchQuery);
-    setSearchQuery('');
+    console.log("Выполняется поиск:", searchQuery);
+    setSearchQuery("");
   };
 
   return (
@@ -83,12 +83,18 @@ export default function Footer() {
       <div className="Footer_bottom">
         <ul>
           <li>
-            <a href="https://instagram.com/zhumakadyrova_nagima?igshid=MzRlODBiNWFlZA==" target="_blank">
+            <a
+              href="https://instagram.com/zhumakadyrova_nagima?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+            >
               <img src={s_media_instagram} alt="" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100041208312759&mibextid=LQQJ4d" target="_blank">
+            <a
+              href="https://www.facebook.com/profile.php?id=100041208312759&mibextid=LQQJ4d"
+              target="_blank"
+            >
               <img src={s_media_facebook} alt="" />
             </a>
           </li>

@@ -13,10 +13,7 @@ export default function CartLink() {
     <div className="CartLink">
       <Link to="/cart">
         {<span className="CartLink-total">{total}</span>}
-        <img
-          src={cartPhoto}
-          className="Cart-pctr"
-        />
+        <img src={cartPhoto} className="Cart-pctr" />
       </Link>
     </div>
   );
