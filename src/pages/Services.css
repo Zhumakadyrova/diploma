@@ -12,55 +12,92 @@
   margin-top: 350px;
   color: wheat;
 } */
-.question_list{
+.question_list {
   margin: 330px 30px 80px;
 }
-.question_row{
+.question_row {
   display: flex;
   justify-content: center;
 }
-.question_row .col-8{
+.question_row .col-8 {
   width: 70%;
   margin: 5px;
   padding: 20px;
   font-size: 20px;
   background: linear-gradient(-45deg, #ee7652a1, #c6f6f65a, #a523d577, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 }
-.question_row .col-8 a{
-text-decoration: none;
-color: white;
-font-weight: 500;
+.question_row .col-8 a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
-.question_row .col-4{
+.question_row .col-4 {
   padding: 20px;
   text-align: center;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.question_row .col-4{
+.question_row .col-4 {
   margin: 5px;
   width: 20%;
   background-color: white;
 }
-.Services ul{
+.Services ul {
   margin: 20px 75px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
-ul img{
+ul img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+@media (max-width: 1200px) {
+  .question_list {
+    margin: 180px 30px 80px;
+  }
+}
+@media (max-width: 800px) {
+  .question_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .question_row .col-8 {
+    width: 60%;
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+    background: linear-gradient(
+      -45deg,
+      #ee7652a1,
+      #c6f6f65a,
+      #a523d577,
+      #23d5ab
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+  }
+}
+@media (max-width: 500px) {
+  .question_row .col-4 {
+    margin: 5px;
+    width: 20%;
+    background-color: white;
+  }
+  .question_list {
+    margin: 120px 30px 80px;
+  }
 }

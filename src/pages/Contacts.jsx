@@ -94,14 +94,14 @@ export default function Contacts() {
             </li>
           </Dropdown>
         </li>
-        <li className="third-link link">
+        <li className="third-link link last_p">
           <Dropdown
             index={2}
             activeDropdown={activeDropdown}
             setActiveDropdown={setActiveDropdown}
           >
-            <li className="back third-link1 dropdown-content">
-              <p>
+            <li className="back third-link1 dropdown-content last_p">
+              <p >
                 <ul>
                   <li>
                     <strong>

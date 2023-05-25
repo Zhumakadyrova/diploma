@@ -13,44 +13,42 @@ export default function Services() {
       <div className="question_list">
         <div className="question_row">
           <div className="col-4">
-            <h5>snflnf</h5>
+            <h4>Horse riding</h4>
             <p>Lorem ipsum dolor</p>
           </div>
           <div className="col-8">
-          <Link to="/category/horse-riding">About</Link>
+            <Link to="/category/horse-riding">About</Link>
           </div>
         </div>
         <div className="question_row">
           <div className="col-4">
-            <h5>snflnf</h5>
+            <h4>Tickets</h4>
             <p>Lorem ipsum dolor </p>
           </div>
           <div className="col-8">
-          <Link to="/category/ticket">About</Link>
+            <Link to="/category/ticket">About</Link>
           </div>
         </div>
         <div className="question_row">
           <div className="col-4">
-            <h5>snflnf</h5>
+            <h4>Activities</h4>
             <p>Lorem ipsum dolor </p>
           </div>
           <div className="col-8">
-          <Link to="/category/activities">About</Link>
+            <Link to="/category/activities">About</Link>
           </div>
         </div>
         <div className="question_row">
           <div className="col-4">
-            <h5>snflnf</h5>
+            <h4>Hiking equipment</h4>
             <p>Lorem ipsum dolor</p>
           </div>
           <div className="col-8">
-            
             <Link to="/category/hiking-equipment">About</Link>
           </div>
         </div>
       </div>
       <Slide />
     </div>
-    
   );
 }
