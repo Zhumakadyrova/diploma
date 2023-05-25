@@ -11,7 +11,11 @@ const Dropdown = ({ children, index, activeDropdown, setActiveDropdown }) => {
     <>
       <button className="dropdown-button" onClick={toggleDropdown}></button>
       {activeDropdown === index && (
-        <ul className={`dropdown-content back ${activeDropdown === index ? 'active' : ''}`}>
+        <ul
+          className={`dropdown-content back ${
+            activeDropdown === index ? "active" : ""
+          }`}
+        >
           {children}
         </ul>
       )}
@@ -101,7 +105,7 @@ export default function Contacts() {
             setActiveDropdown={setActiveDropdown}
           >
             <li className="back third-link1 dropdown-content last_p">
-              <p >
+              <p>
                 <ul>
                   <li>
                     <strong>
@@ -131,7 +135,7 @@ export default function Contacts() {
           >
             <li className="back fourth-link1 dropdown-content">
               <p className="last_p">
-                <strong>We are on YouTube</strong> 
+                <strong>We are on YouTube</strong>
               </p>
             </li>
           </Dropdown>
