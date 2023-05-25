@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 3px;
-  
 }
 .Layout header {
   display: flex;
@@ -37,7 +36,7 @@
   width: 100%;
 }
 
-.video{
+.video {
   width: 100%;
   position: absolute;
   top: 0;
@@ -45,10 +44,10 @@
   right: 0;
   z-index: -200;
 }
-.main-content{
+.main-content {
   position: relative;
-  z-index: -5; 
-   
+  z-index: -5;
+
   color: antiquewhite;
 }
 
@@ -56,12 +55,12 @@
   .Layout header > .Nav {
     display: none;
   }
-} 
+}
 @media (max-width: 965px) {
-  .Layout main{
+  .Layout main {
     flex: 100%;
   }
-  .Layout aside{
+  .Layout aside {
     flex: 100%;
   }
 }
